@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="36" viewBox="0 0 19 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #212121;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Gauche" class="cls-1" d="M169.687,738.291l-0.719.713L151,721.168l0.719-.714ZM151.4,721.166l-0.7-.7L168.3,702.994l0.7,0.7Z" transform="translate(-150.688 -703)"/>
+</svg>

@@ -1,9 +1,30 @@
 .nav-list {
   display: flex;
   color: white;
+  height: 100%;
+  align-items: center;
+
 
   &__item {
     margin-right: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+    position: relative;
+
+    &_active  {
+      opacity: 1;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 5px;
+        background-color: white;
+        width: 100%;
+        bottom: 0;
+      }
+    }
 
     &:last-of-type {
       margin-right: 0;
@@ -13,4 +34,6 @@
 
 .header__nav, .header__account {
   display: flex;
+  height: 100%;
+  align-items: center;
 }

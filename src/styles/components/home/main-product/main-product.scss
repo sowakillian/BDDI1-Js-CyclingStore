@@ -6,6 +6,7 @@
   padding-top: 100px;
   margin-top: -100px;
   position: relative;
+  transition: all 1s ease;
 
   .wrap {
     padding-top: 40px;
@@ -17,6 +18,24 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  &__item {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+
+    &_inactive {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
+
+    &_active {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+    }
   }
 }
 

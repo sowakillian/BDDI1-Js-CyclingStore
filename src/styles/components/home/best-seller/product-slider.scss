@@ -1,5 +1,30 @@
 .product-slider {
-  display: flex;
-  justify-content: space-between;
   margin-top: 50px;
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__arrow-left, &__arrow-right {
+    position: absolute;
+    top: 40%;
+    background-color: transparent;
+    border: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+
+  &__arrow-left {
+    left: -80px;
+  }
+
+  &__arrow-right {
+    right: -80px;
+  }
 }
