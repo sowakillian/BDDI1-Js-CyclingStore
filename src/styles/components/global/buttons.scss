@@ -1,0 +1,31 @@
+.base-button {
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  border: 1px solid;
+  width: 150px;
+  text-align: left;
+  position: relative;
+  transition: all 0.2s ease;
+
+  &:after {
+    background-image: url("../images/arrow_right.png");
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    content: '';
+    width: 6px;
+    height: 9px;
+  }
+
+  &_white {
+    color: white;
+    border-color: white;
+  }
+
+  &_black {
+    color: black;
+    border-color: black;
+  }
+}

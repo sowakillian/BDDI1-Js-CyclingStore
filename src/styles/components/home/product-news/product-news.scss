@@ -1,0 +1,11 @@
+.product-news {
+  background-color: $dark-green;
+  padding: 45px 0;
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
+}

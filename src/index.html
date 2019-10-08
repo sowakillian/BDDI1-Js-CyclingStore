@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Webfront Project</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li class="nav-list__item nav-list__item_active"><a class="header__item" href="#">Accueil</a></li>
+            <li class="nav-list__item"><a class="header__item" href="#">En cours</a></li>
+            <li class="nav-list__item"><a class="header__item" href="#">Historique</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__account">
+          <a class="header__item" href="#">Sophia Lopez</a>
+          <a class="header__item" href="#">Déconnexion</a>
+        </div>
+    </div>
+  </header>
+
+    <section class="main-product">
+      <div class="wrap">
+        <h2 class="main-product__title">Nom du modèle 2</h2>
+        <p class="main-product__type">Taille L - Mécanique</p>
+        <p class="main-product__color">Rouge feu</p>
+
+        <img class="main-product__photo" src="/src/images/main-product/velo.png">
+
+        <button class="main-product__button-buy base-button">commander</button>
+      </div>
+    </section>
+
+    <section class="best-seller">
+      <div class="wrap">
+        <header class="best-seller-header">
+          <p class="best-seller__title">Best-seller</p>
+          <div class="product-sort">
+            <label for="product-selector">trier par : </label>
+            <select class="product-sort__select" id="product-selector">
+              <option value="stock">stock</option>
+              <option value="color">color</option>
+              <option value="size">size</option>
+            </select>
+          </div>
+        </header>
+
+        <div class="product-slider">
+            <article class="product-item product-item_soldout">
+              <div class="product-item__photo">
+                <img src="/src/images/best-seller/slider/product2.png">
+              </div>
+              <div class="product-item__content">
+                <h3 class="product-item__title">Nom du modèle un peu long</h3>
+                <h4 class="product-item__description">Manuel - Vert gazon</h4>
+                <span class="product-item__stock">0 en stock</span>
+              </div>
+            </article>
+
+            <article class="product-item product-item_soldout">
+              <div class="product-item__photo">
+                <img src="/src/images/best-seller/slider/product2.png">
+              </div>
+              <div class="product-item__content">
+                <h3 class="product-item__title">Nom du modèle un peu long</h3>
+                <h4 class="product-item__description">Manuel - Vert gazon</h4>
+                <span class="product-item__stock">0 en stock</span>
+              </div>
+
+            </article>
+
+            <article class="product-item">
+              <div class="product-item__photo">
+                <img src="/src/images/best-seller/slider/product2.png">
+              </div>
+              <div class="product-item__content">
+                <h3 class="product-item__title">Nom du modèle un peu long</h3>
+                <h4 class="product-item__description">Manuel - Vert gazon</h4>
+                <span class="product-item__stock">0 en stock</span>
+              </div>
+            </article>
+
+            <article class="product-item">
+              <div class="product-item__photo">
+                <img src="/src/images/best-seller/slider/product2.png">
+              </div>
+              <div class="product-item__content">
+                <h3 class="product-item__title">Nom du modèle un peu long</h3>
+                <h4 class="product-item__description">Manuel - Vert gazon</h4>
+                <span class="product-item__stock">0 en stock</span>
+              </div>
+            </article>
+
+            <article class="product-item">
+              <div class="product-item__photo">
+                <img src="/src/images/best-seller/slider/product2.png">
+              </div>
+              <div class="product-item__content">
+                <h3 class="product-item__title">Nom du modèle un peu long</h3>
+                <h4 class="product-item__description">Manuel - Vert gazon</h4>
+                <span class="product-item__stock">0 en stock</span>
+              </div>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-news">
+      <div class="wrap">
+        <p class="product-news__title">Nouveautés</p>
+        <div class="product-news-slider">
+          <article class="product-news-slider-item">
+            <img src="/src/images/product-news/news1.jpg" class="product-news-slider-item__photo">
+            <div class="product-news-slider-content">
+              <h3 class="product-news-slider-content__title">Nom du nouveau modèle</h3>
+              <p class="product-news-slider-content__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.
+              </p>
+              <button class="product-news-slider-content__button base-button base-button_black">commander</button>
+            </div>
+          </article>
+        </div>
+        <nav class="news-nav">
+          <ul class="news-nav-list">
+            <li class="news-nav-list__item"></li>
+            <li class="news-nav-list__item news-nav-list__item_active"></li>
+            <li class="news-nav-list__item"></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+</body>
+</html>
