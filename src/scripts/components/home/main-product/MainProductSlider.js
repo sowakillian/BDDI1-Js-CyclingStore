@@ -54,6 +54,7 @@ const MainProductSlider = () => {
         if (slideIndex > slides.length) {slideIndex = 1}
         slides[slideIndex-1].classList.remove('main-product__item_inactive');
         slides[slideIndex-1].classList.add('main-product__item_active');
+
         headerBackgroundColor.style.backgroundColor=slides[slideIndex-1].dataset.color;
         setTimeout(moveSlides, 6000);
     };

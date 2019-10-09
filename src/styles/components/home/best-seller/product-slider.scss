@@ -6,6 +6,10 @@
   &__container {
     position: absolute;
     overflow: hidden;
+
+    &_notslider {
+      position: relative;
+    }
   }
 
   &__wrapper {
