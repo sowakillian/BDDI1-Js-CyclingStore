@@ -1,8 +1,14 @@
 .product-slider {
   margin-top: 50px;
   position: relative;
+  min-height: 250px;
 
   &__container {
+    position: absolute;
+    overflow: hidden;
+  }
+
+  &__wrapper {
     display: flex;
     justify-content: space-between;
   }

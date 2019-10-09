@@ -1,4 +1,4 @@
 import '../styles/index.scss';
 
-//import sliderMainProduct from "./components/sliderMainProduct";
-import MainProductSlider from "./components/main-product/MainProductSlider";
+import MainProductSlider from "./components/home/main-product/MainProductSlider";
+import BestSellerSlider from "./components/home/best-seller/BestSellerSlider";

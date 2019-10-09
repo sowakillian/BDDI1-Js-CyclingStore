@@ -7,7 +7,6 @@ import MainProductSlideItem from "./MainProductSlideItem";
 MainProductSlider
 ------------------- */
 const MainProductSlider = () => {
-
     let slideList = [];
     let slideIndex = 0;
     const slideDiv = document.querySelector(".main-product > .wrap")
@@ -18,9 +17,13 @@ const MainProductSlider = () => {
     slideList.push(slide1, slide2);
     console.log(slideDiv);
 
-    slideList.forEach( (slideItem) => {
-        console.log(slideItem);
-        slideDiv.insertAdjacentHTML('beforeend', `
+    /* -------------------
+    Display slides in the DOM
+    ------------------- */
+    const displaySlides = () => {
+        slideList.forEach( (slideItem) => {
+            console.log(slideItem);
+            slideDiv.insertAdjacentHTML('beforeend', `
              <div class="main-product__item fade" data-color="${slideItem.backgroundColor}">
                 <h2 class="main-product__title">${slideItem.title}</h2>
                 <p class="main-product__type">${slideItem.type}</p>
@@ -31,8 +34,13 @@ const MainProductSlider = () => {
                 <button class="main-product__button-buy base-button">commander</button>
              </div>
         `);
-    });
+        });
+    };
+    displaySlides();
 
+    /* -------------------
+    Transition between slides
+    ------------------- */
     const moveSlides = () => {
         let i;
         const slides = document.querySelectorAll(".main-product__item");
@@ -50,8 +58,6 @@ const MainProductSlider = () => {
         setTimeout(moveSlides, 6000);
     };
     moveSlides();
-
-
 };
 
 export default MainProductSlider();
