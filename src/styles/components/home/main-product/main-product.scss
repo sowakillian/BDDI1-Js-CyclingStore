@@ -7,34 +7,43 @@
   margin-top: -100px;
   position: relative;
   transition: all 1s ease;
+  height: 500px;
 
   .wrap {
     padding-top: 40px;
+    position: relative;
   }
 
   &__photo {
     max-width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 2s ease;
   }
 
   &__item {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 1s ease;
+    transition: all 2s ease;
+    position: absolute;
+    width: 100%;
 
     &_inactive {
       opacity: 0;
       visibility: hidden;
-      height: 0;
+
+      .main-product__photo {
+        transform: translateY(100%) translateX(-50%);
+      }
     }
 
     &_active {
       opacity: 1;
       visibility: visible;
-      height: auto;
+
+      .main-product__photo {
+        transform: translateY(0) translateX(-50%);
+      }
     }
   }
 }

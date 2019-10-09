@@ -1,0 +1,13 @@
+.orders-formations {
+  background-color: $white;
+
+  .wrap {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+    > * {
+      width: calc(50% - 25px);
+    }
+  }
+}
