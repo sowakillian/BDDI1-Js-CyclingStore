@@ -54,7 +54,7 @@ const MainProductSlider = () => {
         slides[slideIndex-1].classList.add('main-product__item_active');
 
         headerBackgroundColor.style.backgroundColor=slides[slideIndex-1].dataset.color;
-        setTimeout(moveSlides, 6000);
+        setTimeout(moveSlides, 9000);
     };
     moveSlides();
 };
