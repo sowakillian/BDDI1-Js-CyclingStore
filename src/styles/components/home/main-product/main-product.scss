@@ -34,7 +34,7 @@
       visibility: hidden;
 
       .main-product__photo {
-        transform: scale(0) translateY(100%) translateX(-50%);
+        transform: translateY(100%) translateX(-50%);
       }
     }
 
@@ -45,7 +45,7 @@
 
       .main-product__photo {
 
-        transform: scale(1) translateY(0) translateX(-50%);
+        transform: translateY(0) translateX(-50%);
       }
     }
   }

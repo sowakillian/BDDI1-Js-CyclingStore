@@ -35,7 +35,7 @@
           <p class="best-seller__title">Best-seller</p>
           <div class="product-sort">
             <label for="product-selector">trier par : </label>
-            <select class="product-sort__select" id="product-selector">
+            <select class="product-sort__select base-select" data-type="dark" id="product-selector">
               <option value="stock">stock</option>
               <option value="color">color</option>
               <option value="size">size</option>
@@ -179,7 +179,25 @@
 
     <section class="sales-chart">
       <div class="wrap">
+        <header class="sales-chart-header">
+          <p class="sales-chart-header__title">Ventes / commandes</p>
+          <div class="sales-chart-header-options">
+            <label for="model">modèle :</label>
+            <select class="base-select sales-chart-header-options__select" data-type="light" id="model">
+              <option>Nom du modèle</option>
+              <option value="kazak2000">Kazak2000</option>
+              <option value="cher120">Cher120</option>
+            </select>
 
+            <label for="model">modèle :</label>
+            <select class="base-select sales-chart-header-options__select" data-type="light" id="color">
+              <option value="noir">Noir</option>
+              <option value="bleu">Bleu</option>
+              <option value="vert">Vert</option>
+            </select>
+          </div>
+        </header>
+        <img class="sales-chart__graph" src="/src/images/sales-chart/sales-graph.png">
       </div>
     </section>
 
@@ -194,7 +212,7 @@
           </label>
           <div class="product-sort">
             <label for="product-selector">trier par : </label>
-            <select class="product-sort__select" id="product-selector">
+            <select class="product-sort__select base-select" data-type="dark" id="product-selector">
               <option value="stock">stock</option>
               <option value="color">color</option>
               <option value="size">size</option>
