@@ -1,0 +1,22 @@
+.base-select {
+  border: 1px solid;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 32px;
+
+  &[data-type='dark'] {
+    color: $middle-grey;
+    border-color: $light-grey;
+    background-color: $white;
+
+  }
+
+  &[data-type='light'] {
+    color: white;
+    border-color: white;
+    background-color: transparent;
+  }
+}

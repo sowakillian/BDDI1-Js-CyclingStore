@@ -3,10 +3,12 @@
 
 @import 'abstracts/variables';
 @import 'abstracts/animations';
+@import 'abstracts/mixins';
 
 @import 'components/global/wrap';
 @import 'components/global/global';
 @import 'components/global/buttons';
+@import 'components/global/select';
 
 @import 'layouts/main/header';
 @import 'layouts/main/nav';

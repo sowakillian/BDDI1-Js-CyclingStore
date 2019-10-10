@@ -30,6 +30,10 @@
         appearance: none;
         border: 1px solid $light-grey;
         box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.15);
+
+        &::placeholder {
+          color:$middle-grey;
+        }
       }
     }
   }
