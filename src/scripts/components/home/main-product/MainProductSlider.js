@@ -15,14 +15,12 @@ const MainProductSlider = () => {
     const slide2 =  new MainProductSlideItem("#e73025","/src/images/main-product/velo2.png", "Modèle 2", "Taille L - Mécanique", "Rouge feu");
 
     slideList.push(slide1, slide2);
-    console.log(slideDiv);
 
     /* -------------------
     Display slides in the DOM
     ------------------- */
     const displaySlides = () => {
         slideList.forEach( (slideItem) => {
-            console.log(slideItem);
             slideDiv.insertAdjacentHTML('beforeend', `
              <div class="main-product__item fade" data-color="${slideItem.backgroundColor}">
                 <h2 class="main-product__title">${slideItem.title}</h2>

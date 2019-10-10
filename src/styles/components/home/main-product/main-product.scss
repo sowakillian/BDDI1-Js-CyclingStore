@@ -21,6 +21,7 @@
     left: 50%;
     transform: translateX(-50%);
     transition: all 2s ease;
+    transform-origin: bottom left;
   }
 
   &__item {
@@ -33,7 +34,7 @@
       visibility: hidden;
 
       .main-product__photo {
-        transform: translateY(100%) translateX(-50%);
+        transform: scale(0) translateY(100%) translateX(-50%);
       }
     }
 
@@ -41,8 +42,10 @@
       opacity: 1;
       visibility: visible;
 
+
       .main-product__photo {
-        transform: translateY(0) translateX(-50%);
+
+        transform: scale(1) translateY(0) translateX(-50%);
       }
     }
   }
