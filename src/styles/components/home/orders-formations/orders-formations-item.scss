@@ -56,9 +56,39 @@
     &__status {
       margin-left: -10px;
 
-      &_success {
+      &[data-state='success'] {
         background-color: $fluo-green;
       }
+    }
+  }
+
+  &[data-state='success'] {
+    .orders-formations-item-photo__status{
+      background-color: $fluo-green;
+    }
+
+    .orders-formations-item-details__info {
+      font-weight: bold;
+      color: $fluo-green;
+    }
+
+    .orders-formations-item__button {
+      border-color: $fluo-green;
+    }
+  }
+
+  &[data-state='warning'] {
+    .orders-formations-item-photo__status {
+      background-color: $light-red;
+    }
+
+    .orders-formations-item-details__info {
+      font-weight: bold;
+      color: $light-red;
+    }
+
+    .orders-formations-item__button {
+      border-color: $light-red;
     }
   }
 }

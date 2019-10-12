@@ -11,6 +11,48 @@
     align-items: center;
   }
 
+  &__item {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    position: relative;
+
+    &_active  {
+      opacity: 1;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 5px;
+        background-color: white;
+        width: 100%;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__nav, &__account {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__nav {
+    .header__item {
+      margin-right: 30px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    ul {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+
+  }
+
   &__account {
     .header__item {
       &:first-of-type {
@@ -23,17 +65,30 @@
           right: 0;
           top: 50%;
           transform: translateY(-50%);
-          height: 12px;
-          width: 12px;
-          border-radius: 6px;
-          background-color: white;
-          content: '+';
-          color: black;
-          font-size: 11px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          content: '';
+          background-image: url("../images/header/more.png");
+          width: 30px;
+          height: 30px;
         }
+      }
+
+    }
+  }
+
+  @include mq-to-700 {
+    &__nav {
+      ul {
+        display: none;
+      }
+    }
+
+    &__deconnexion {
+      font-size: 0;
+
+      &:before {
+        content:'';
+        background-image: url("../images/header/logout.png");
+        display: block;
       }
     }
   }

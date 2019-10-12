@@ -9,4 +9,8 @@
   @include mq-to-768 {
     max-width: 600px;
   }
+
+  @include mq-to-700 {
+    padding: 0 20px;
+  }
 }

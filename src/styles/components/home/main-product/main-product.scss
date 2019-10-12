@@ -14,6 +14,12 @@
     position: relative;
   }
 
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
   &__photo {
     max-width: 100%;
     position: absolute;
@@ -28,6 +34,7 @@
     transition: all 2s ease;
     position: absolute;
     width: 100%;
+    left: 0;
 
     &_inactive {
       opacity: 0;
@@ -42,21 +49,30 @@
       opacity: 1;
       visibility: visible;
 
-
       .main-product__photo {
-
         transform: translateY(0) translateX(-50%);
       }
+    }
+  }
+
+  @include mq-to-576 {
+
+    height: 100vh;
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__type, &__color {
+      font-size: 14px;
+    }
+
+    &__item {
+      text-align: center;
     }
   }
 }
 
 .main-product__button-buy {
   margin-top: 215px;
-}
-
-.main-product__title {
-  font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 18px;
 }

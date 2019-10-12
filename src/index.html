@@ -9,16 +9,24 @@
   <header class="header">
     <div class="wrap">
         <nav class="header__nav">
-          <ul class="nav-list">
-            <li class="nav-list__item nav-list__item_active"><a class="header__item" href="#">Accueil</a></li>
-            <li class="nav-list__item"><a class="header__item" href="#">En cours</a></li>
-            <li class="nav-list__item"><a class="header__item" href="#">Historique</a></li>
+          <ul>
+            <li class="header__item header__item_active"><a href="#">Accueil</a></li>
+            <li class="header__item"><a href="#">En cours</a></li>
+            <li class="header__item"><a href="#">Historique</a></li>
           </ul>
+          <div class="header-nav-mob">
+            <button class="header-nav-mob__button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+          </div>
         </nav>
 
         <div class="header__account">
           <a class="header__item" href="#">Sophia Lopez</a>
-          <a class="header__item" href="#">Déconnexion</a>
+          <a class="header__item header__deconnexion" href="#">Déconnexion</a>
         </div>
     </div>
   </header>
@@ -117,7 +125,7 @@
             <button class="orders-formations-item__button">consulter</button>
           </article>
 
-          <article class="orders-formations-item">
+          <article class="orders-formations-item" data-state="success">
             <div class="orders-formations-item-photo">
               <span class="orders-formations-item-photo__profile"></span>
               <span class="orders-formations-item-photo__status"></span>
@@ -130,7 +138,7 @@
             <button class="orders-formations-item__button">consulter</button>
           </article>
 
-          <article class="orders-formations-item">
+          <article class="orders-formations-item" data-state="success">
             <div class="orders-formations-item-photo">
               <span class="orders-formations-item-photo__profile"></span>
               <span class="orders-formations-item-photo__status"></span>
@@ -311,11 +319,11 @@
             Mon compte
           </p>
           <ul>
-            <li><a class="footer-item__link" href="#" >actualiés</a></li>
-            <li><a class="footer-item__link" href="#" >annuaire</a></li>
-            <li><a class="footer-item__link" href="#" >app store</a></li>
+            <li><a class="footer-item__link" href="#" >contacts favoris</a></li>
             <li><a class="footer-item__link" href="#" >commandes</a></li>
             <li><a class="footer-item__link" href="#" >formations</a></li>
+            <li><a class="footer-item__link" href="#" >préférences</a></li>
+            <li><a class="footer-item__link" href="#" >profil</a></li>
             <li><a class="footer-item__link" href="#" >publicités</a></li>
           </ul>
         </nav>
@@ -325,12 +333,12 @@
             Applications
           </p>
           <ul>
-            <li><a class="footer-item__link" href="#" >actualiés</a></li>
-            <li><a class="footer-item__link" href="#" >annuaire</a></li>
-            <li><a class="footer-item__link" href="#" >app store</a></li>
-            <li><a class="footer-item__link" href="#" >commandes</a></li>
-            <li><a class="footer-item__link" href="#" >formations</a></li>
-            <li><a class="footer-item__link" href="#" >publicités</a></li>
+            <li><a class="footer-item__link" href="#" >Catalogue</a></li>
+            <li><a class="footer-item__link" href="#" >App SAV</a></li>
+            <li><a class="footer-item__link" href="#" >App Garantie</a></li>
+            <li><a class="footer-item__link" href="#" >User Management</a></li>
+            <li><a class="footer-item__link" href="#" >CRM</a></li>
+            <li><a class="footer-item__link" href="#" >ERP</a></li>
           </ul>
         </nav>
 
@@ -339,12 +347,12 @@
             Liens
           </p>
           <ul>
-            <li><a class="footer-item__link" href="#" >actualiés</a></li>
-            <li><a class="footer-item__link" href="#" >annuaire</a></li>
-            <li><a class="footer-item__link" href="#" >app store</a></li>
+            <li><a class="footer-item__link" href="#" >à propos</a></li>
+            <li><a class="footer-item__link" href="#" >conditions d'utilisations</a></li>
+            <li><a class="footer-item__link" href="#" >mentions légales</a></li>
             <li><a class="footer-item__link" href="#" >commandes</a></li>
-            <li><a class="footer-item__link" href="#" >formations</a></li>
-            <li><a class="footer-item__link" href="#" >publicités</a></li>
+            <li><a class="footer-item__link" href="#" >intranet</a></li>
+            <li><a class="footer-item__link" href="#" >site.com</a></li>
           </ul>
         </nav>
       </div>

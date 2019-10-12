@@ -97,7 +97,7 @@ const BestSellerSlider = () => {
     displaySlides();
 
     const moveSlides = () => {
-        const prevButton = el.querySelector('.product-slider__arrow-left')
+        const prevButton = document.querySelector('.product-slider__arrow-left');
         prevButton.addEventListener("click", () => { alert('test') }, false);
     };
     moveSlides();

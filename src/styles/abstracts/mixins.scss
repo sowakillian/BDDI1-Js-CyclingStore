@@ -28,6 +28,12 @@
   }
 }
 
+@mixin mq-to-700 {
+  @media (max-width: #{$screen700}) {
+    @content;
+  }
+}
+
 @mixin mq-to-576 {
   @media (max-width: #{$screen576}) {
     @content;
