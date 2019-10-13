@@ -1,0 +1,29 @@
+.orders-formations {
+  background-color: $white;
+
+  .wrap {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+    > * {
+      width: calc(50% - 25px);
+    }
+  }
+
+  //responsive - orders-formations.scss
+  @include mq-to-768 {
+    .wrap {
+      padding: 50px 30px;
+    }
+  }
+
+  @include mq-to-700 {
+    .wrap {
+      flex-direction: column;
+      > * {
+        width: 100%;
+      }
+    }
+  }
+}

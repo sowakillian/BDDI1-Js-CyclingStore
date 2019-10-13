@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/src/images/product-news/news1.jpg",
+    "title": "Nouveauté 1",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.",
+    "slug": "/news/2"
+  },
+  {
+    "image": "/src/images/product-news/news2.jpg",
+    "title": "Nouveauté 2",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.",
+    "slug": "/news/2"
+  },
+  {
+    "image": "/src/images/product-news/news3.jpg",
+    "title": "Nouveauté 3",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.",
+    "slug": "/news/3"
+  }
+]

@@ -11,8 +11,8 @@ const MainProductSlider = () => {
     let slideIndex = 0;
     const slideDiv = document.querySelector(".main-product > .wrap");
 
-    const slide1 =  new MainProductSlideItem("#009f55","/src/images/main-product/velo.png", "Modèle 1", "Taille S - Mécanique", "Vert feu");
-    const slide2 =  new MainProductSlideItem("#e73025","/src/images/main-product/velo2.png", "Modèle 2", "Taille L - Mécanique", "Rouge feu");
+    const slide1 =  new MainProductSlideItem("#009f55","/src/assets/images/main-product/velo.png", "Modèle 1", "Taille S - Mécanique", "Vert feu");
+    const slide2 =  new MainProductSlideItem("#e73025","/src/assets/images/main-product/velo2.png", "Modèle 2", "Taille L - Mécanique", "Rouge feu");
 
     slideList.push(slide1, slide2);
 

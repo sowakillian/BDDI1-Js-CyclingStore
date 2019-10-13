@@ -1,0 +1,44 @@
+.product-news-slider {
+  width: 81%;
+  margin: 0 auto;
+
+  &-item {
+    display: flex;
+  }
+
+  &-content {
+    color: $dark-grey;
+    margin-left: 50px;
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 27px;
+    }
+
+    &__description {
+      margin-bottom: 30px;
+      line-height: 17px;
+      font-size: 14px;
+
+    }
+  }
+
+  //responsive - product-news-slider.scss
+  @include mq-to-1024 {
+    width: 100%;
+  }
+
+  @include mq-to-768 {
+    &-item {
+      flex-direction: column;
+
+      &__photo {
+        margin-bottom: 30px;
+      }
+    }
+    &-content {
+      margin-left: 0;
+    }
+  }
+}
+

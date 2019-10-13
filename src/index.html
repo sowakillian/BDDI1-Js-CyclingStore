@@ -53,7 +53,7 @@
 
         <div class="product-slider">
           <button class="product-slider__arrow-left">
-            <img src="/src/images/best-seller/slider/slider_arrow_left.svg">
+            <img src="/src/assets/images/best-seller/slider/slider_arrow_left.svg">
           </button>
 
           <div class="product-slider-inner">
@@ -61,7 +61,7 @@
           </div>
 
           <button class="product-slider__arrow-right">
-            <img src="/src/images/best-seller/slider/slider_arrow_right.svg">
+            <img src="/src/assets/images/best-seller/slider/slider_arrow_right.svg">
           </button>
         </div>
       </div>
@@ -72,7 +72,7 @@
         <p class="product-news__title">Nouveautés</p>
         <div class="product-news-slider">
           <article class="product-news-slider-item">
-            <img src="/src/images/product-news/news1.jpg" class="product-news-slider-item__photo">
+            <img src="/src/assets/images/product-news/news1.jpg" class="product-news-slider-item__photo">
             <div class="product-news-slider-content">
               <h3 class="product-news-slider-content__title">Nom du nouveau modèle</h3>
               <p class="product-news-slider-content__description">
@@ -99,54 +99,64 @@
             Historique de vos commandes
           </p>
 
-          <article class="orders-formations-item">
-            <div class="orders-formations-item-photo">
-              <span class="orders-formations-item-photo__profile"></span>
-              <span class="orders-formations-item-photo__status"></span>
+          <article class="orders-formations-item" data-state="warning" data-consultation="true">
+
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"></span>
+                <span class="orders-formations-item-photo__status"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__number">Commande N°365412</p>
+                <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
             </div>
-            <div class="orders-formations-item-details">
-              <p class="orders-formations-item-details__number">Commande N°365412</p>
-              <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
-              <span class="orders-formations-item-details__info">attention requise</span>
-            </div>
+
             <button class="orders-formations-item__button">consulter</button>
           </article>
 
-          <article class="orders-formations-item">
-            <div class="orders-formations-item-photo">
-              <span class="orders-formations-item-photo__profile"></span>
-              <span class="orders-formations-item-photo__status"></span>
-            </div>
-            <div class="orders-formations-item-details">
-              <p class="orders-formations-item-details__number">Commande N°365412</p>
-              <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
-              <span class="orders-formations-item-details__info">attention requise</span>
-            </div>
-            <button class="orders-formations-item__button">consulter</button>
-          </article>
-
-          <article class="orders-formations-item" data-state="success">
-            <div class="orders-formations-item-photo">
-              <span class="orders-formations-item-photo__profile"></span>
-              <span class="orders-formations-item-photo__status"></span>
-            </div>
-            <div class="orders-formations-item-details">
-              <p class="orders-formations-item-details__number">Commande N°365412</p>
-              <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
-              <span class="orders-formations-item-details__info">attention requise</span>
+          <article class="orders-formations-item" data-state="shipping">
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"></span>
+                <span class="orders-formations-item-photo__status"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__number">Commande N°365412</p>
+                <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
             </div>
             <button class="orders-formations-item__button">consulter</button>
           </article>
 
           <article class="orders-formations-item" data-state="success">
-            <div class="orders-formations-item-photo">
-              <span class="orders-formations-item-photo__profile"></span>
-              <span class="orders-formations-item-photo__status"></span>
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"></span>
+                <span class="orders-formations-item-photo__status"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__number">Commande N°365412</p>
+                <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
             </div>
-            <div class="orders-formations-item-details">
-              <p class="orders-formations-item-details__number">Commande N°365412</p>
-              <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
-              <span class="orders-formations-item-details__info">attention requise</span>
+            <button class="orders-formations-item__button">consulter</button>
+          </article>
+
+          <article class="orders-formations-item" data-state="success">
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"></span>
+                <span class="orders-formations-item-photo__status"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__number">Commande N°365412</p>
+                <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
             </div>
             <button class="orders-formations-item__button">consulter</button>
           </article>
@@ -197,7 +207,7 @@
               <option value="cher120">Cher120</option>
             </select>
 
-            <label for="model">modèle :</label>
+            <label for="model">couleur :</label>
             <select class="base-select sales-chart-header-options__select" data-type="light" id="color">
               <option value="noir">Noir</option>
               <option value="bleu">Bleu</option>
@@ -205,7 +215,7 @@
             </select>
           </div>
         </header>
-        <img class="sales-chart__graph" src="/src/images/sales-chart/sales-graph.png">
+        <img class="sales-chart__graph" src="/src/assets/images/sales-chart/sales-graph.png">
       </div>
     </section>
 
@@ -233,7 +243,7 @@
         <div class="product-slider__wrapper">
           <article class="product-item product-item_soldout">
             <div class="product-item__photo">
-              <img src="/src/images/best-seller/slider/product2.png">
+              <img src="/src/assets/images/best-seller/slider/product2.png">
             </div>
             <div class="product-item__content">
               <h3 class="product-item__title">Nom du modèle un peu long</h3>
@@ -244,7 +254,7 @@
 
           <article class="product-item product-item_soldout">
             <div class="product-item__photo">
-              <img src="/src/images/best-seller/slider/product2.png">
+              <img src="/src/assets/images/best-seller/slider/product2.png">
             </div>
             <div class="product-item__content">
               <h3 class="product-item__title">Nom du modèle un peu long</h3>
@@ -256,7 +266,7 @@
 
           <article class="product-item">
             <div class="product-item__photo">
-              <img src="/src/images/best-seller/slider/product2.png">
+              <img src="/src/assets/images/best-seller/slider/product2.png">
             </div>
             <div class="product-item__content">
               <h3 class="product-item__title">Nom du modèle un peu long</h3>
@@ -267,7 +277,7 @@
 
           <article class="product-item">
             <div class="product-item__photo">
-              <img src="/src/images/best-seller/slider/product2.png">
+              <img src="/src/assets/images/best-seller/slider/product2.png">
             </div>
             <div class="product-item__content">
               <h3 class="product-item__title">Nom du modèle un peu long</h3>
@@ -278,7 +288,7 @@
 
           <article class="product-item">
             <div class="product-item__photo">
-              <img src="/src/images/best-seller/slider/product2.png">
+              <img src="/src/assets/images/best-seller/slider/product2.png">
             </div>
             <div class="product-item__content">
               <h3 class="product-item__title">Nom du modèle un peu long</h3>

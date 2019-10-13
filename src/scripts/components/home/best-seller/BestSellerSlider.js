@@ -36,7 +36,7 @@ const BestSellerSlider = () => {
               <div class="product-slider__wrapper">
                 <article class="product-item product-item_soldout">
                   <div class="product-item__photo">
-                    <img src="/src/images/best-seller/slider/product2.png">
+                    <img src="/src/assets/images/best-seller/slider/product2.png">
                   </div>
                   <div class="product-item__content">
                     <h3 class="product-item__title">Nom du modèle un peu long</h3>
@@ -47,7 +47,7 @@ const BestSellerSlider = () => {
 
                 <article class="product-item product-item_soldout">
                   <div class="product-item__photo">
-                    <img src="/src/images/best-seller/slider/product2.png">
+                    <img src="/src/assets/images/best-seller/slider/product2.png">
                   </div>
                   <div class="product-item__content">
                     <h3 class="product-item__title">Nom du modèle un peu long</h3>
@@ -59,7 +59,7 @@ const BestSellerSlider = () => {
 
                 <article class="product-item">
                   <div class="product-item__photo">
-                    <img src="/src/images/best-seller/slider/product2.png">
+                    <img src="/src/assets/images/best-seller/slider/product2.png">
                   </div>
                   <div class="product-item__content">
                     <h3 class="product-item__title">Nom du modèle un peu long</h3>
@@ -70,7 +70,7 @@ const BestSellerSlider = () => {
 
                 <article class="product-item">
                   <div class="product-item__photo">
-                    <img src="/src/images/best-seller/slider/product2.png">
+                    <img src="/src/assets/images/best-seller/slider/product2.png">
                   </div>
                   <div class="product-item__content">
                     <h3 class="product-item__title">Nom du modèle un peu long</h3>
@@ -81,7 +81,7 @@ const BestSellerSlider = () => {
 
                 <article class="product-item">
                   <div class="product-item__photo">
-                    <img src="/src/images/best-seller/slider/product2.png">
+                    <img src="/src/assets/images/best-seller/slider/product2.png">
                   </div>
                   <div class="product-item__content">
                     <h3 class="product-item__title">Nom du modèle un peu long</h3>

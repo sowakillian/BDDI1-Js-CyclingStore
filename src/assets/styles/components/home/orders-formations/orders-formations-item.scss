@@ -1,0 +1,139 @@
+.orders-formations-item {
+  display: flex;
+  padding: 28px 0;
+  align-items: center;
+  border-bottom: 1px solid #d6d6d6;
+  justify-content: space-between;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
+  &-photoAndDetails {
+    display: flex;
+  }
+
+  &-details {
+    &__number {
+      font-size: 14px;
+      font-weight: bold;
+      color: $dark-grey;
+      line-height: 20px;
+    }
+
+    &__date {
+      font-size: 11px;
+      color: $dark-grey;
+    }
+
+    &__info {
+      font-size: 10px;
+      margin-top: 18px;
+      display: block;
+
+      &_warning {
+        font-weight: bold;
+        color: red;
+      }
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    display: block;
+    border: 1px solid;
+    padding: 8px 0;
+    width: 102px;
+    visibility: hidden;
+    transition: background-color 0.4s ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $light-red;
+      color: white;
+    }
+  }
+
+  &-photo {
+    position: relative;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+
+    &__profile, &__status {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      border: 1px solid $light-grey;
+      display: block;
+    }
+
+    &__status {
+      margin-left: -10px;
+
+      &[data-state='success'] {
+        background-color: $fluo-green;
+      }
+    }
+  }
+
+  &[data-consultation='true'] {
+    .orders-formations-item__button {
+      visibility: visible;
+    }
+  }
+
+  &[data-state='success'] {
+    .orders-formations-item-photo__status{
+      background-color: $fluo-green;
+      position: relative;
+
+      &:before {
+        content: '';
+        background-image: url("../images/orders-formations/tick-sign.svg");
+        display: block;
+        position: absolute;
+        left: 50%;
+        width: 50%;
+      }
+    }
+
+    .orders-formations-item-details__info {
+      font-weight: bold;
+      color: $fluo-green;
+    }
+
+    .orders-formations-item__button {
+      border-color: $fluo-green;
+    }
+  }
+
+  &[data-state='warning'] {
+    .orders-formations-item-photo__status {
+      background-color: $light-red;
+    }
+
+    .orders-formations-item-details__info {
+      font-weight: bold;
+      color: $light-red;
+    }
+
+    .orders-formations-item__button {
+      border-color: $light-red;
+    }
+  }
+
+  &[data-state='shipping'] {
+    .orders-formations-item-photo__status {
+      background-color: $shipping-grey;
+    }
+
+    .orders-formations-item-details__info {
+      color: $middle-grey;
+    }
+
+    .orders-formations-item__button {
+      border-color: $middle-grey;
+    }
+  }
+}
