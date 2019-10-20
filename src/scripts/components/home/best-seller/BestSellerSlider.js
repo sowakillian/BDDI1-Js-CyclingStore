@@ -98,7 +98,7 @@ const BestSellerSlider = () => {
 
     const moveSlides = () => {
         const prevButton = document.querySelector('.product-slider__arrow-left');
-        prevButton.addEventListener("click", () => { alert('test') }, false);
+        prevButton.addEventListener("click", () => { alert('test'); }, false);
     };
     moveSlides();
 };

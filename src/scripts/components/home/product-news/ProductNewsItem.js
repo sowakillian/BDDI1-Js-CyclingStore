@@ -18,24 +18,28 @@ class ProductNewsItem {
     init(el, data){
         this.el=el;
 
-        this.title = this.el.querySelector('h4');
-        this.texte = this.el.querySelector('p');
+        this.title = this.el.querySelector('.product-news-slider-content__title');
+        this.text = this.el.querySelector('.product-news-slider-content__description');
 
         if(data){
             this.model = data.model;
         }else {
-            this.model = new Todo(this.title.textContent, this.texte.textContent);
+            this.model = new ProductNew(this.title.textContent, this.text.textContent);
         }
 
-        this.el.setAttribute('data-id', this.model.id);
+        //this.el.setAttribute('data-id', this.model.id);
         this.fill();
-        this.model.addEventListener('TODO::EditTodo', () => this.fill());
     }
     build(data){
         this.el = document.createElement('article');
         this.el.classList.add('row');
-        this.el.innerHTML = document.getElementById('list-item-tmpl').innerHTML;
+        this.el.innerHTML = document.getElementById('news-item-tmpl').innerHTML;
         this.init(this.el, data);
+    }
+
+    fill(){
+        this.title.textContent = this.model.title;
+        this.text.textContent = this.model.text;
     }
 }
 

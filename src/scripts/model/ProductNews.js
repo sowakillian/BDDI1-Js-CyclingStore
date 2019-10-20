@@ -1,8 +1,10 @@
 import Loader from '../utils/Loader';
 import ProductNew from './ProductNew';
+import EventManager from '../utils/EventManager';
 
-class ProductNews {
+class ProductNews extends EventManager {
     constructor() {
+        super();
         this.loader = new Loader();
         this._models = [];
     }
@@ -12,13 +14,13 @@ class ProductNews {
             datasArray.forEach(data => {
                 this.add(new ProductNew(data.title, data.text));
             });
-            console.log(datasArray)
         }).catch(error => {
-            console.log(`Erreur Todos.fetch() :: ${error}`);
+            console.log(`Erreur ProductNews.fetch() :: ${error}`);
         });
     }
     add(model) {
         this._models.push(model);
+        this.dispatchEvent(new CustomEvent('TODO::AddProductNews', {detail: {model}} ));
     }
 }
 
