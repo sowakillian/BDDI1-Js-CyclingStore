@@ -20,6 +20,7 @@ class AllProductsItem {
 
         this.title = this.el.querySelector('.product-item__title');
         this.stock = this.el.querySelector('.product-item__stock');
+        this.photo = this.el.querySelector('.product-item__photo > img');
 
         if(data){
             this.model = data.model;
@@ -40,6 +41,7 @@ class AllProductsItem {
     fill(){
         this.title.textContent = this.model.title;
         this.stock.textContent = this.model.stock;
+        this.photo.src = this.model.images.big;
     }
 }
 

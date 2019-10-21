@@ -9,8 +9,8 @@
     "stock": 3,
     "slug": "/model/0",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": true,
     "best": true
@@ -25,8 +25,8 @@
     "stock": 0,
     "slug": "/model/1",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
     "best": false
@@ -41,8 +41,8 @@
     "stock": 1,
     "slug": "/model/2",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
     "best": false
@@ -57,8 +57,8 @@
     "stock": 8,
     "slug": "/model/3",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
     },
     "hero": false,
     "best": true
@@ -73,8 +73,8 @@
     "stock": 5,
     "slug": "/model/4",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model5_big.png",
+      "small": "/src/assets/images/products/model5_small.png"
     },
     "hero": false,
     "best": true
@@ -89,8 +89,8 @@
     "stock": 2,
     "slug": "/model/5",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": false,
     "best": true
@@ -105,8 +105,8 @@
     "stock": 0,
     "slug": "/model/6",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
     "best": false
@@ -121,8 +121,8 @@
     "stock": 0,
     "slug": "/model/7",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
     "best": true
@@ -137,8 +137,8 @@
     "stock": 1,
     "slug": "/model/8",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
     },
     "hero": false,
     "best": true
@@ -153,8 +153,8 @@
     "stock": 3,
     "slug": "/model/9",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model5_big.png",
+      "small": "/src/assets/images/products/model5_small.png"
     },
     "hero": false,
     "best": false
@@ -169,8 +169,8 @@
     "stock": 10,
     "slug": "/model/10",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": false,
     "best": false
@@ -185,8 +185,8 @@
     "stock": 2,
     "slug": "/model/11",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
     "best": false
@@ -201,8 +201,8 @@
     "stock": 3,
     "slug": "/model/12",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
     "best": false
@@ -217,8 +217,8 @@
     "stock": 1,
     "slug": "/model/13",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
     },
     "hero": true,
     "best": true
@@ -233,8 +233,8 @@
     "stock": 8,
     "slug": "/model/14",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model5_big.png",
+      "small": "/src/assets/images/products/model5_small.png"
     },
     "hero": false,
     "best": true
@@ -249,8 +249,8 @@
     "stock": 1,
     "slug": "/model/15",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": false,
     "best": true
@@ -265,8 +265,8 @@
     "stock": 12,
     "slug": "/model/16",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
     "best": false
@@ -281,8 +281,8 @@
     "stock": 7,
     "slug": "/model/17",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
     "best": true
@@ -297,8 +297,8 @@
     "stock": 1,
     "slug": "/model/18",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
     },
     "hero": false,
     "best": false
@@ -313,8 +313,8 @@
     "stock": 3,
     "slug": "/model/19",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model5_big.png",
+      "small": "/src/assets/images/products/model5_small.png"
     },
     "hero": false,
     "best": true
@@ -329,8 +329,8 @@
     "stock": 5,
     "slug": "/model/20",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": false,
     "best": false
@@ -345,8 +345,8 @@
     "stock": 3,
     "slug": "/model/21",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
     "best": true
@@ -361,8 +361,8 @@
     "stock": 0,
     "slug": "/model/22",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
     "best": true
@@ -377,8 +377,8 @@
     "stock": 0,
     "slug": "/model/23",
     "images": {
-      "big": "",
-      "small": ""
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
     },
     "hero": false,
     "best": false
