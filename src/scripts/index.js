@@ -2,9 +2,9 @@ import '../assets/styles/index.scss';
 
 import BestSellerSlider from "./components/home/best-seller/BestSellerSlider";
 
-
 import ProductNewsList from "./components/home/product-news/ProductNewsList";
 import MainProductList from "./components/home/main-product/MainProductList";
+import AllProductsList from "./components/home/all-products/AllProductsList";
 
 const productnews = ((productnewslist) => {
     productnewslist.init();
@@ -14,5 +14,9 @@ const mainproduct = ((mainproductlist) => {
     mainproductlist.init();
     //mainproductlist.slideItem();
 })(MainProductList);
+
+const allproducts = ((allproducts) => {
+    allproducts.init();
+})(AllProductsList);
 
 

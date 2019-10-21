@@ -38,6 +38,14 @@
     }
   }
 
+  .product-slider__wrapper {
+    flex-wrap: wrap;
+
+    .product-item {
+      margin-bottom: 10px;
+    }
+  }
+
   &-more {
     display: flex;
     justify-content: space-between;
