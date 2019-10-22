@@ -13,14 +13,6 @@ const BestSellerSlider = () => {
     let slidesSorted = [];
     const el = document.querySelector(".product-slider-inner");
 
-    const getSlidesFromJson = () => {
-        const req = new XMLHttpRequest();
-        req.open('GET', '/src/datas/bestSellerSlides.json', false);
-        req.send();
-        slides = JSON.parse(req.response);
-    };
-    getSlidesFromJson();
-
     const rangeSlidesByPackets = () => {
         let i=0;
         for (i; i<slides.length; i=i+5) {
