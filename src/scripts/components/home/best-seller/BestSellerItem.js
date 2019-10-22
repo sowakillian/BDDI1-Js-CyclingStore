@@ -18,8 +18,9 @@ class MainProductItem {
     init(el, data){
         this.el=el;
 
-        this.title = this.el.querySelector('.main-product__title');
-        this.stock = this.el.querySelector('.main-product__type');
+        this.title = this.el.querySelector('.product-item__title');
+        this.stock = this.el.querySelector('.product-item__stock');
+        this.photo = this.el.querySelector('.product-item__photo > img');
 
         if(data){
             this.model = data.model;
@@ -31,15 +32,16 @@ class MainProductItem {
         this.fill();
     }
     build(data){
-        this.el = document.createElement('div');
-        this.el.classList.add('main-product__item', 'fade', 'main-product__item_inactive');
-        this.el.innerHTML = document.getElementById('main-product-tmpl').innerHTML;
+        this.el = document.createElement('article');
+        this.el.classList.add('product-item');
+        this.el.innerHTML = document.getElementById('product-item-tmpl').innerHTML;
         this.init(this.el, data);
     }
 
     fill(){
         this.title.textContent = this.model.title;
         this.stock.textContent = this.model.stock;
+        this.photo.src = this.model.images.big;
     }
 }
 

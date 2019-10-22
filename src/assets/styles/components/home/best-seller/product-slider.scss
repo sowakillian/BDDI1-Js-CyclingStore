@@ -3,6 +3,12 @@
   position: relative;
   min-height: 250px;
 
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   &__container {
     position: absolute;
     overflow: hidden;
@@ -36,5 +42,9 @@
 
   &__arrow-right {
     right: -80px;
+  }
+
+  .product-item {
+    margin-bottom: 10px;
   }
 }
