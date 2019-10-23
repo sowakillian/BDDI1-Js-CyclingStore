@@ -1,7 +1,7 @@
 /* -------------------
 Const
 ------------------- */
-import PRODUCTS from "../../../const/PRODUCTS";
+import BESTPRODUCTS from "../../../const/home/BESTPRODUCTS";
 
 /* -------------------
 Components
@@ -15,9 +15,9 @@ const BestSellerList = {
     el: document.querySelector('.best-seller-slider'),
 
     init() {
-        PRODUCTS.addEventListener('TODO::AddProduct', (event) => this.addItem(event));
+        BESTPRODUCTS.addEventListener('TODO::AddProduct', (event) => this.addItem(event));
 
-        PRODUCTS.fetch('best');
+        BESTPRODUCTS.fetch('best');
     },
 
     addItem(e) {

@@ -1,7 +1,7 @@
 /* -------------------
 Const
 ------------------- */
-import PRODUCTS from "../../../const/PRODUCTS";
+import ALLPRODUCTS from "../../../const/home/ALLPRODUCTS";
 
 /* -------------------
 Components
@@ -15,9 +15,9 @@ const AllProductsList = {
     el: document.querySelector('.all-products-list'),
 
     init() {
-        PRODUCTS.addEventListener('TODO::AddProduct', (event) => this.addItem(event));
+        ALLPRODUCTS.addEventListener('TODO::AddProduct', (event) => this.addItem(event));
 
-        PRODUCTS.fetch('all');
+        ALLPRODUCTS.fetch();
     },
 
     addItem(e) {

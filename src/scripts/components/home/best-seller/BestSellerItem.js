@@ -1,12 +1,12 @@
 /* -------------------
 Manager
 ------------------- */
-import PRODUCTS from "../../../const/PRODUCTS";
+import PRODUCTS from "../../../const/home/MAINPRODUCTS";
 
 /* -------------------
 Model
 ------------------- */
-import Product from "../../../model/Product";
+import Product from "../../../model/home/Product";
 
 /* -------------------
 MainProductSlideItem

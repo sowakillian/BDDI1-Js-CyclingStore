@@ -1,12 +1,12 @@
 /* -------------------
 Manager
 ------------------- */
-import PRODUCTNEWS from "../../../const/PRODUCTNEWS";
+import PRODUCTNEWS from "../../../const/home/PRODUCTNEWS";
 
 /* -------------------
 Model
 ------------------- */
-import ProductNew from "../../../model/ProductNew";
+import ProductNew from "../../../model/home/ProductNew";
 
 /* -------------------
 ListItem

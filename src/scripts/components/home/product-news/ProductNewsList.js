@@ -1,7 +1,7 @@
 /* -------------------
 Const
 ------------------- */
-import PRODUCTNEWS from "../../../const/PRODUCTNEWS";
+import PRODUCTNEWS from "../../../const/home/PRODUCTNEWS";
 
 /* -------------------
 Components

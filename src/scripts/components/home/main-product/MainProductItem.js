@@ -1,12 +1,12 @@
 /* -------------------
 Manager
 ------------------- */
-import PRODUCTS from "../../../const/PRODUCTS";
+import PRODUCTS from "../../../const/home/MAINPRODUCTS";
 
 /* -------------------
 Model
 ------------------- */
-import Product from "../../../model/Product";
+import Product from "../../../model/home/Product";
 
 /* -------------------
 MainProductSlideItem
@@ -20,6 +20,8 @@ class MainProductItem {
 
         this.title = this.el.querySelector('.main-product__title');
         this.stock = this.el.querySelector('.main-product__type');
+        this.image = this.el.querySelector('.main-product__photo');
+
 
         if(data){
             this.model = data.model;
@@ -40,6 +42,7 @@ class MainProductItem {
     fill(){
         this.title.textContent = this.model.title;
         this.stock.textContent = this.model.stock;
+        this.image.src = this.model.images.big;
     }
 }
 

@@ -1,7 +1,7 @@
 /* -------------------
 Const
 ------------------- */
-import PRODUCTS from "../../../const/PRODUCTS";
+import MAINPRODUCTS from "../../../const/home/MAINPRODUCTS";
 
 /* -------------------
 Components
@@ -18,9 +18,9 @@ const MainProductList = {
     slideDiv: document.querySelector(".main-product > .wrap"),
 
     init() {
-        PRODUCTS.addEventListener('TODO::AddProduct', (event) => this.addItem(event));
+        MAINPRODUCTS.addEventListener('TODO::AddProduct', (event) => this.addItem(event));
 
-        PRODUCTS.fetch('hero');
+        MAINPRODUCTS.fetch();
     },
 
     addItem(e) {
@@ -30,13 +30,10 @@ const MainProductList = {
     },
 
     slideItem() {
-        console.log(this.slideIndex);
         let i;
 
         const slides = document.querySelectorAll(".main-product__item");
-        console.log('ouonenest');
 
-        console.log(slides);
         slides[0].classList.remove('main-product__item_inactive');
         slides[0].classList.add('main-product__item_active');
 
