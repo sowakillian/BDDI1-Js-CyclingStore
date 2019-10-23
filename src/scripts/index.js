@@ -1,11 +1,10 @@
 import '../assets/styles/index.scss';
 
-//import BestSellerSlider from "./components/home/best-seller/BestSellerSlider";
-
 import ProductNewsList from "./components/home/product-news/ProductNewsList";
 import MainProductList from "./components/home/main-product/MainProductList";
 import AllProductsList from "./components/home/all-products/AllProductsList";
 import BestSellerList from "./components/home/best-seller/BestSellerList";
+import AllProductsLoadMore from "./components/home/all-products/AllProductsLoadMore";
 
 const productnews = ((productnewslist) => {
     productnewslist.init();
@@ -23,5 +22,9 @@ const bestseller = ((bestsellerlist) => {
 const allproducts = ((allproducts) => {
     allproducts.init();
 })(AllProductsList);
+
+const allproductsloadmore = ((allproductsloadmore) => {
+    allproductsloadmore.loadMore();
+})(AllProductsLoadMore);
 
 

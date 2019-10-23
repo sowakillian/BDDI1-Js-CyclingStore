@@ -52,6 +52,10 @@
   &__description {
     margin-top: 14px;
     font-size: 11px;
+
+    & > * {
+      display: inline-block;
+    }
   }
 
   &__stock {

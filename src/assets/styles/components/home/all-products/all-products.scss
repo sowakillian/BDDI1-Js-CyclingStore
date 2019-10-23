@@ -52,6 +52,17 @@
     margin-top: 35px;
   }
 
+  &-list {
+    height: 255px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+
+    &__opened {
+      overflow: visible;
+      height: auto;
+    }
+  }
+
   @include mq-to-768 {
     &-header {
       &__title {

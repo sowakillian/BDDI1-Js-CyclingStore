@@ -17,19 +17,19 @@ class Products extends EventManager {
                 switch (type) {
                     case 'hero':
                         if (data.hero === true) {
-                            this.add(new Product(data.title, data.spec, data.stock, data.slug, data.images, data.hero, data.best));
+                            this.addProduct(data);
                         }
                         break;
                     case 'best':
                         if (data.best === true) {
-                            this.add(new Product(data.title, data.spec, data.stock, data.slug, data.images, data.hero, data.best));
+                            this.addProduct(data);
                         }
                         break;
                     case 'all':
-                        this.add(new Product(data.title, data.spec, data.stock, data.slug, data.images, data.hero, data.best));
+                        this.addProduct(data);
                         break;
                     default:
-                        this.add(new Product(data.title, data.spec, data.stock, data.slug, data.images, data.hero, data.best));
+                        this.addProduct(data);
                 }
 
             });
@@ -40,6 +40,10 @@ class Products extends EventManager {
     add(model) {
         this._models.push(model);
         this.dispatchEvent(new CustomEvent('TODO::AddProduct', {detail: {model}} ));
+    }
+
+    addProduct(data) {
+        this.add(new Product(data.title, data.specs, data.stock, data.slug, data.images, data.hero, data.best));
     }
 }
 

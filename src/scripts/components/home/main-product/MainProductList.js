@@ -33,7 +33,7 @@ const MainProductList = {
         console.log(this.slideIndex);
         let i;
 
-        const slides = document.querySelectorAll("main-product__item");
+        const slides = document.querySelectorAll(".main-product__item");
         console.log('ouonenest');
 
         console.log(slides);
@@ -51,7 +51,7 @@ const MainProductList = {
             slides[this.slideIndex-1].classList.remove('main-product__item_inactive');
             slides[this.slideIndex-1].classList.add('main-product__item_active');
         }, 5000);
-    }
+    },
 };
 
 export default MainProductList;

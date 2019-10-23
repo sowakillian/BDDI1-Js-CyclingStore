@@ -21,6 +21,8 @@ class MainProductItem {
         this.title = this.el.querySelector('.product-item__title');
         this.stock = this.el.querySelector('.product-item__stock');
         this.photo = this.el.querySelector('.product-item__photo > img');
+        this.engine = this.el.querySelector('.product-item__engine');
+        this.color = this.el.querySelector('.product-item__color');
 
         if(data){
             this.model = data.model;
@@ -42,6 +44,8 @@ class MainProductItem {
         this.title.textContent = this.model.title;
         this.stock.textContent = this.model.stock;
         this.photo.src = this.model.images.big;
+        this.engine.textContent = this.model.specs.engine;
+        this.color.textContent = this.model.specs.color;
     }
 }
 

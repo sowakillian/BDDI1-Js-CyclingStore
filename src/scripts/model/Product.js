@@ -1,8 +1,8 @@
 class Product{
-    constructor(title = '', spec = '', stock = '', slug = '', images = '', hero = '', best = '') {
+    constructor(title = '', specs = '', stock = '', slug = '', images = '', hero = '', best = '') {
         this._id = Math.floor(Number(Date.now() * Math.random() )).toString();
         this._title = title;
-        this._spec = spec;
+        this._specs = specs;
         this._stock = stock;
         this._slug = slug;
         this._images = images;
@@ -14,8 +14,8 @@ class Product{
     set title(title) {
         this._title = title;
     }
-    set spec(spec) {
-        this._spec = spec;
+    set specs(specs) {
+        this._specs = specs;
     }
     set stock(stock) {
         this._stock = stock;
@@ -38,8 +38,8 @@ class Product{
     get title() {
         return this._title;
     }
-    get spec() {
-        return this._spec;
+    get specs() {
+        return this._specs;
     }
     get stock() {
         return this._stock;
