@@ -5,7 +5,7 @@ class Loader {
 		return new Promise((resolve, reject) => {
 			console.log('Load');
 			let request = new XMLHttpRequest();
-			request.open('GET', url, false);
+			request.open('GET', url, true);
 			request.addEventListener('readystatechange', () => {
 				if (request.readyState === 4) {
 					if(request.status === 200) {

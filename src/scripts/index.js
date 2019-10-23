@@ -12,7 +12,9 @@ const productnews = ((productnewslist) => {
 
 const mainproduct = ((mainproductlist) => {
     mainproductlist.init();
-    //mainproductlist.slideItem();
+    setTimeout(() => {
+        mainproductlist.slideItem();
+    }, 200);
 })(MainProductList);
 
 const bestseller = ((bestsellerlist) => {
