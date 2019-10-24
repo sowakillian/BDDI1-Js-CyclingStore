@@ -25,6 +25,7 @@ const AllProductsList = {
         allProductsItem.build(e.detail);
         this.el.appendChild(allProductsItem.el);
     },
+
 };
 
 export default AllProductsList;

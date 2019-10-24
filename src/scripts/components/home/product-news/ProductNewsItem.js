@@ -6,7 +6,7 @@ import PRODUCTNEWS from "../../../const/home/PRODUCTNEWS";
 /* -------------------
 Model
 ------------------- */
-import ProductNew from "../../../model/home/ProductNew";
+import ProductNew from "../../../model/home/product-news/ProductNew";
 
 /* -------------------
 ListItem
@@ -32,7 +32,7 @@ class ProductNewsItem {
     }
     build(data){
         this.el = document.createElement('article');
-        this.el.classList.add('row');
+        this.el.classList.add('product-news-slider-item', 'fade', 'product-news-slider-item_inactive');
         this.el.innerHTML = document.getElementById('news-item-tmpl').innerHTML;
         this.init(this.el, data);
     }

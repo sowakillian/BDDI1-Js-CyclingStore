@@ -1,2 +1,2 @@
-import AllProducts from "../../model/home/AllProducts";
+import AllProducts from "../../model/home/all-products/AllProducts";
 export default new AllProducts();

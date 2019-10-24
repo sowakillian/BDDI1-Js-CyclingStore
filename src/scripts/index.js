@@ -5,9 +5,13 @@ import MainProductList from "./components/home/main-product/MainProductList";
 import AllProductsList from "./components/home/all-products/AllProductsList";
 import BestSellerList from "./components/home/best-seller/BestSellerList";
 import AllProductsLoadMore from "./components/home/all-products/AllProductsLoadMore";
+import BestSellerSlider from "./components/home/best-seller/BestSellerSlider";
 
 const productnews = ((productnewslist) => {
     productnewslist.init();
+    setTimeout(() => {
+        productnewslist.slideItem();
+    }, 200);
 })(ProductNewsList);
 
 const mainproduct = ((mainproductlist) => {
@@ -20,6 +24,14 @@ const mainproduct = ((mainproductlist) => {
 const bestseller = ((bestsellerlist) => {
     bestsellerlist.init();
 })(BestSellerList);
+
+const bestsellerslider = ((bestsellerslider) => {
+    setTimeout(() => {
+        bestsellerslider.rangeSlidesByPackets();
+        bestsellerslider.displaySlides();
+        bestsellerslider.moveSlides();
+    }, 1000);
+})(BestSellerSlider);
 
 const allproducts = ((allproducts) => {
     allproducts.init();

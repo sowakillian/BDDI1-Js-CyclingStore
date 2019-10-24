@@ -1,6 +1,6 @@
-import Loader from '../../utils/Loader';
+import Loader from '../../../utils/Loader';
 import ProductNew from './ProductNew';
-import EventManager from '../../utils/EventManager';
+import EventManager from '../../../utils/EventManager';
 
 class ProductNews extends EventManager {
     constructor() {

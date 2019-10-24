@@ -1,9 +1,30 @@
 .product-news-slider {
   width: 81%;
   margin: 0 auto;
+  position: relative;
 
   &-item {
     display: flex;
+    position: absolute;
+    transition: all 2s ease;
+
+    &_inactive {
+      opacity: 0;
+      visibility: hidden;
+
+      .main-product__photo {
+        transform: translateY(100%) translateX(-50%);
+      }
+    }
+
+    &_active {
+      opacity: 1;
+      visibility: visible;
+
+      .main-product__photo {
+        transform: translateY(0) translateX(-50%);
+      }
+    }
   }
 
   &-content {
@@ -12,11 +33,11 @@
 
     &__title {
       font-size: 18px;
-      margin-bottom: 27px;
+      margin-bottom: 24px;
     }
 
     &__description {
-      margin-bottom: 30px;
+      margin-bottom: 28px;
       line-height: 17px;
       font-size: 14px;
 

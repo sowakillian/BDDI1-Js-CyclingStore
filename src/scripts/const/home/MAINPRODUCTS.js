@@ -1,2 +1,2 @@
-import MainProducts from "../../model/home/MainProducts";
+import MainProducts from "../../model/home/main-product/MainProducts";
 export default new MainProducts();

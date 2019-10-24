@@ -4,26 +4,26 @@ Components
 
 
 /* -------------------
-MainProductSlider
+BestSellerSlider
 ------------------- */
 
-const BestSellerSlider = () => {
+const BestSellerSlider = {
+    slides: document.querySelectorAll('.product-item'),
+    slidesSorted: [],
+    el: document.querySelector(".product-slider-inner"),
 
-    let slides = null;
-    let slidesSorted = [];
-    const el = document.querySelector(".product-slider-inner");
-
-    const rangeSlidesByPackets = () => {
+    rangeSlidesByPackets() {
+        console.log(this.slides);
         let i=0;
-        for (i; i<slides.length; i=i+5) {
-            slidesSorted.push([slides[i],slides[i+1],slides[i+2],slides[i+3],slides[i+4]]);
+        for (i; i<this.slides.length; i=i+5) {
+            this.slidesSorted.push([this.slides[i],this.slides[i+1],this.slides[i+2],this.slides[i+3],this.slides[i+4]]);
         }
-    };
-    rangeSlidesByPackets();
+        console.log(this.slidesSorted);
+    },
 
-    const displaySlides = () => {
-        slidesSorted.forEach( (slideItem) => {
-            el.insertAdjacentHTML('beforeend', `
+    displaySlides() {
+        this.slidesSorted.forEach( (slideItem) => {
+            this.el.insertAdjacentHTML('beforeend', `
              <div class="product-slider__container">
               <div class="product-slider__wrapper">
                 <article class="product-item product-item_soldout">
@@ -85,14 +85,12 @@ const BestSellerSlider = () => {
             </div>
         `);
         });
-    };
-    displaySlides();
+    },
 
-    const moveSlides = () => {
+    moveSlides() {
         const prevButton = document.querySelector('.product-slider__arrow-left');
         prevButton.addEventListener("click", () => { alert('test'); }, false);
-    };
-    moveSlides();
+    },
 };
 
-export default BestSellerSlider();
+export default BestSellerSlider;

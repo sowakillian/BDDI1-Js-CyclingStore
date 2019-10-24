@@ -1,8 +1,8 @@
-import Loader from '../../utils/Loader';
-import EventManager from '../../utils/EventManager';
-import Product from './Product';
+import Loader from '../../../utils/Loader';
+import EventManager from '../../../utils/EventManager';
+import Product from '../../global/Product';
 
-class AllProducts extends EventManager {
+class BestProducts extends EventManager {
     constructor() {
         super();
         this.loader = new Loader();
@@ -12,10 +12,12 @@ class AllProducts extends EventManager {
         this.loader.load('/src/datas/products.json').then(datas => {
             let datasArray = [...datas];
             datasArray.forEach(data => {
-               this.addProduct(data);
+                if (data.best === true) {
+                    this.addProduct(data);
+                }
             });
         }).catch(error => {
-            console.log(`Erreur AllProducts.fetch() :: ${error}`);
+            console.log(`Erreur BestProducts.fetch() :: ${error}`);
         });
     }
     add(model) {
@@ -28,4 +30,4 @@ class AllProducts extends EventManager {
     }
 }
 
-export default AllProducts;
+export default BestProducts;

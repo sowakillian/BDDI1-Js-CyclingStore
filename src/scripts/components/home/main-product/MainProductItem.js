@@ -6,7 +6,7 @@ import PRODUCTS from "../../../const/home/MAINPRODUCTS";
 /* -------------------
 Model
 ------------------- */
-import Product from "../../../model/home/Product";
+import Product from "../../../model/global/Product";
 
 /* -------------------
 MainProductSlideItem

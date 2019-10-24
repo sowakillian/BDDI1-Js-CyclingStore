@@ -1,2 +1,2 @@
-import ProductNews from "../../model/home/ProductNews";
+import ProductNews from "../../model/home/product-news/ProductNews";
 export default new ProductNews();
