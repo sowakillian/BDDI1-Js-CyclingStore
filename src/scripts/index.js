@@ -7,6 +7,7 @@ import AllProductsList from "./components/home/all-products/AllProductsList";
 import BestSellerList from "./components/home/best-seller/BestSellerList";
 import AllProductsLoadMore from "./components/home/all-products/AllProductsLoadMore";
 import BestSellerSlider from "./components/home/best-seller/BestSellerSlider";
+import AllProductsSearch from "./components/home/all-products/AllProductsSearch";
 
 const header = ((header) => {
     header.preload();
@@ -42,6 +43,10 @@ const bestsellerslider = ((bestsellerslider) => {
 const allproducts = ((allproducts) => {
     allproducts.init();
 })(AllProductsList);
+
+const allproductssearch = ((allproductssearch) => {
+    allproductssearch.searchProduct();
+})(AllProductsSearch);
 
 const allproductsloadmore = ((allproductsloadmore) => {
     allproductsloadmore.loadMore();
