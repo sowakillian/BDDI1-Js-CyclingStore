@@ -49,10 +49,18 @@
 
       &__photo {
         margin-bottom: 30px;
+        max-width: 60%;
+        height: auto;
       }
+
+      
     }
     &-content {
       margin-left: 0;
+      
+      &__description {
+        max-width: 90%;
+      }
     }
   }
 }

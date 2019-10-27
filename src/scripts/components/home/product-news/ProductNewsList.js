@@ -36,18 +36,19 @@ const ProductNewsList = {
             this.el.style.transform = 'translate(-20%)';
         }, 5000);
 
-        this.el.addEventListener('transitionend', function() {
+        this.el.addEventListener('transitionend', () => {
 
             if (direction === 1) {
                 this.el.prepend(this.el.lastElementChild);
             } else {
+                console.log(this.el.firstElementChild)
                 this.el.appendChild(this.el.firstElementChild);
             }
 
             this.el.style.transition = 'none';
             this.el.style.transform = 'translate(0)';
             setTimeout(() => {
-                this.el.style.transition = 'all 0.5s';
+                this.el.style.transition = 'all 2s';
             });
         }, false);
     },
