@@ -25,11 +25,12 @@ class MainProductItem {
 
         if(data){
             this.model = data.model;
+            console.log(this.model);
         }else {
             this.model = new Product(this.title.textContent, this.stock.textContent);
         }
 
-        //this.el.setAttribute('data-id', this.model.id);
+        this.el.setAttribute('data-color', this.model.color);
         this.fill();
     }
     build(data){

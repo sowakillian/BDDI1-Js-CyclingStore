@@ -20,6 +20,10 @@
     margin-bottom: 18px;
   }
 
+  &__buttonBuy {
+    margin-top: 215px;
+  }
+
   &__photo {
     max-width: 100%;
     position: absolute;
@@ -58,8 +62,11 @@
 
     height: 100vh;
 
+
+
     &__photo {
       max-width: 90%;
+      margin-top: 40px;
     }
 
     &__title {
@@ -72,10 +79,16 @@
 
     &__item {
       text-align: center;
+
+      &_inactive, &_active {
+        .main-product__photo {
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &__buttonBuy {
+      margin-top: 100%;
     }
   }
-}
-
-.main-product__button-buy {
-  margin-top: 215px;
 }

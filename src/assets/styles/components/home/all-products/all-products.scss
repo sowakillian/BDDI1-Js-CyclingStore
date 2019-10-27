@@ -50,6 +50,16 @@
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
+
+    &__button {
+      color: $middle-grey;
+      border-color: $shipping-grey;
+      padding: 8px 12px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 
   &-list {

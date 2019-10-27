@@ -33,20 +33,22 @@ const MainProductList = {
         let i;
 
         const slides = document.querySelectorAll(".main-product__item");
+        const mainProductDiv = document.querySelector(".main-product");
 
         slides[0].classList.remove('main-product__item_inactive');
         slides[0].classList.add('main-product__item_active');
-
 
         setInterval(() => {
             for (i = 0; i < slides.length; i++) {
                 slides[i].classList.add('main-product__item_inactive');
                 slides[i].classList.remove('main-product__item_active');
+
             }
             this.slideIndex++;
             if (this.slideIndex > slides.length) {this.slideIndex = 1;}
             slides[this.slideIndex-1].classList.remove('main-product__item_inactive');
             slides[this.slideIndex-1].classList.add('main-product__item_active');
+            mainProductDiv.style.backgroundColor=slides[this.slideIndex-1].getAttribute("data-color");
         }, 5000);
     },
 };

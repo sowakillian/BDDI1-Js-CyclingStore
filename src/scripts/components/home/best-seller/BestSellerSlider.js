@@ -1,6 +1,3 @@
-/* -------------------
-Components
-------------------- */
 
 
 /* -------------------
@@ -22,7 +19,7 @@ const BestSellerSlider = {
 
     displaySlides() {
         this.slides.forEach( (slide) => {
-            slide.style.display="none";
+            slide.parentNode.removeChild(slide);
         });
 
         this.slidesSorted.forEach( (slideItem) => {
@@ -42,13 +39,7 @@ const BestSellerSlider = {
                 ${slideItem[2].innerHTML}
               </article>
               
-              <article class="product-item product-item_soldout">
-                ${slideItem[3].innerHTML}
-              </article>
-              
-              <article class="product-item product-item_soldout">
-                ${slideItem[4].innerHTML}
-              </article>
+             
                
 
               </div>
@@ -58,8 +49,41 @@ const BestSellerSlider = {
     },
 
     moveSlides() {
+        let direction;
+        const carousel = document.querySelector('.best-seller-slider-wrapper');
+        const slider = document.querySelector('.best-seller-slider');
         const prevButton = document.querySelector('.product-slider__arrow-left');
-        prevButton.addEventListener("click", () => { alert('test'); }, false);
+        const nextButton = document.querySelector('.product-slider__arrow-right');
+        prevButton.addEventListener("click", () => {
+            if (direction === -1) {
+                direction = 1;
+                slider.appendChild(slider.firstElementChild);
+            }
+            carousel.style.justifyContent = 'flex-end';
+            slider.style.transform = 'translate(20%)';
+
+        }, false);
+
+        nextButton.addEventListener("click", () => {
+            direction = -1;
+            carousel.style.justifyContent = 'flex-start';
+            slider.style.transform = 'translate(-20%)';
+        }, false);
+
+        slider.addEventListener('transitionend', function() {
+
+            if (direction === 1) {
+                slider.prepend(slider.lastElementChild);
+            } else {
+                slider.appendChild(slider.firstElementChild);
+            }
+
+            slider.style.transition = 'none';
+            slider.style.transform = 'translate(0)';
+            setTimeout(() => {
+                slider.style.transition = 'all 0.5s';
+            });
+        }, false);
     },
 };
 

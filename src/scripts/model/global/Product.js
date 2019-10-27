@@ -1,5 +1,5 @@
 class Product{
-    constructor(title = '', specs = '', stock = '', slug = '', images = '', hero = '', best = '') {
+    constructor(title = '', specs = '', stock = '', slug = '', images = '', hero = '', best = '', color='') {
         this._id = Math.floor(Number(Date.now() * Math.random() )).toString();
         this._title = title;
         this._specs = specs;
@@ -8,6 +8,7 @@ class Product{
         this._images = images;
         this._hero = hero;
         this._best = best;
+        this._color = color;
     }
     set id(id) {
     }
@@ -32,6 +33,9 @@ class Product{
     set best(best) {
         this._best = best;
     }
+    set color(color) {
+        this._color = color;
+    }
     get id() {
         return this._id;
     }
@@ -55,6 +59,9 @@ class Product{
     }
     get best() {
         return this._best;
+    }
+    get color() {
+        return this._color;
     }
 }
 

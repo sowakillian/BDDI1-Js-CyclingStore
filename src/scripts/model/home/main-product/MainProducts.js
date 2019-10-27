@@ -26,7 +26,7 @@ class MainProducts extends EventManager {
     }
 
     addProduct(data) {
-        this.add(new Product(data.title, data.specs, data.stock, data.slug, data.images, data.hero, data.best));
+        this.add(new Product(data.title, data.specs, data.stock, data.slug, data.images, data.hero, data.best, data.color));
     }
 }
 

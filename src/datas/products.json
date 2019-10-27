@@ -13,7 +13,8 @@
       "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": true,
-    "best": true
+    "best": true,
+    "color": "#009f55"
   },
   {
     "title": "Nom du modèle 2",
@@ -29,7 +30,8 @@
       "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "lightgrey"
   },
   {
     "title": "Nom long du troisème modèle",
@@ -45,7 +47,8 @@
       "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "orange"
   },
   {
     "title": "Nom du modèle 4",
@@ -61,7 +64,8 @@
       "small": "/src/assets/images/products/model4_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "#ff3f0c"
   },
   {
     "title": "Super Nom",
@@ -77,7 +81,8 @@
       "small": "/src/assets/images/products/model5_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "white"
   },
   {
     "title": "Un modèle avec un nom vraiment long",
@@ -93,7 +98,8 @@
       "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "#009f55"
   },
   {
     "title": "Modèle",
@@ -109,7 +115,8 @@
       "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "lightgrey"
   },
   {
     "title": "Nom du modèle 8",
@@ -125,7 +132,8 @@
       "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "orange"
   },
   {
     "title": "Le neuvième modème",
@@ -141,7 +149,8 @@
       "small": "/src/assets/images/products/model4_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "#ff3f0c"
   },
   {
     "title": "Modèle 10",
@@ -157,7 +166,8 @@
       "small": "/src/assets/images/products/model5_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "white"
   },
   {
     "title": "Nom du modèle",
@@ -173,7 +183,8 @@
       "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "#009f55"
   },
   {
     "title": "Nom du modèle un peu plug long",
@@ -189,7 +200,8 @@
       "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "lightgrey"
   },
   {
     "title": "Modèle numéro 13",
@@ -205,10 +217,12 @@
       "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "orange"
   },
   {
     "title": "Le quatorzième modèle",
+    "color": "#ff3f0c",
     "specs": {
       "size": "S",
       "engine": "Semi-Automatique",
@@ -237,7 +251,8 @@
       "small": "/src/assets/images/products/model5_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "white"
   },
   {
     "title": "16",
@@ -253,7 +268,8 @@
       "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "#009f55"
   },
   {
     "title": "Le modèle après 16",
@@ -269,7 +285,8 @@
       "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "lightgrey"
   },
   {
     "title": "Nom du modèle",
@@ -285,7 +302,8 @@
       "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "orange"
   },
   {
     "title": "Encore un modèle",
@@ -301,7 +319,8 @@
       "small": "/src/assets/images/products/model4_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "#ff3f0c"
   },
   {
     "title": "Nom du modèlle avec deux LL",
@@ -317,7 +336,8 @@
       "small": "/src/assets/images/products/model5_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "white"
   },
   {
     "title": "Modèle",
@@ -333,7 +353,8 @@
       "small": "/src/assets/images/products/model1_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "#009f55"
   },
   {
     "title": "Le modèle 22",
@@ -349,7 +370,8 @@
       "small": "/src/assets/images/products/model2_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "lightgrey"
   },
   {
     "title": "Avant dernier modèle",
@@ -365,7 +387,8 @@
       "small": "/src/assets/images/products/model3_small.png"
     },
     "hero": false,
-    "best": true
+    "best": true,
+    "color": "orange"
   },
   {
     "title": "Last but not least",
@@ -381,6 +404,7 @@
       "small": "/src/assets/images/products/model4_small.png"
     },
     "hero": false,
-    "best": false
+    "best": false,
+    "color": "#ff3f0c"
   }
 ]

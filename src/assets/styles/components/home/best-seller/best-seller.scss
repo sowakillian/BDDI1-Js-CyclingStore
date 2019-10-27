@@ -24,5 +24,30 @@
       align-items: center;
     }
   }
+
+  &-slider {
+    display: flex;
+    height: 100%;
+    width: 500%;
+    flex-shrink: 0;
+    transition: all 0.5s;
+
+    .product-slider__container {
+      flex-basis: 20%;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      overflow: hidden;
+      position: relative;
+      height: 228px;
+    }
+  }
 }
 

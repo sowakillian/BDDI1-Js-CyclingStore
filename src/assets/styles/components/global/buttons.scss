@@ -19,9 +19,21 @@
     height: 9px;
   }
 
+  &:hover {
+     cursor: pointer;
+  }
+
+
+
   &_white {
     color: white;
     border-color: white;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
   }
 
   &_black {
