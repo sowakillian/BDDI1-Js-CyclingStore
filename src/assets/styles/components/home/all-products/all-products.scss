@@ -53,13 +53,19 @@
   }
 
   &-list {
-    height: 255px;
+    height: 228px;
     overflow: hidden;
     transition: all 0.2s ease;
 
     &__opened {
       overflow: visible;
       height: auto;
+    }
+  }
+
+  @include mq-to-1024 {
+    &-list {
+      height: 255px;
     }
   }
 
@@ -70,5 +76,20 @@
       }
       flex-direction: column;
     }
+
+    .product-item {
+      width: calc(25% - (28px / 4));
+    }
   }
+
+  @include mq-to-576 {
+    .product-item {
+      width: 100%;
+    }
+
+    &-list {
+      height: 352px;
+    }
+  }
+
 }

@@ -58,6 +58,10 @@
 
     height: 100vh;
 
+    &__photo {
+      max-width: 90%;
+    }
+
     &__title {
       font-size: 18px;
     }

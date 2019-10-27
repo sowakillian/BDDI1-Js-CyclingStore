@@ -2,29 +2,23 @@
   width: 81%;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  &-inner {
+    display: flex;
+    height: 100%;
+    width: 500%;
+    flex-shrink: 0;
+    transition: all 0.5s;
+  }
 
   &-item {
     display: flex;
-    position: absolute;
     transition: all 2s ease;
-
-    &_inactive {
-      opacity: 0;
-      visibility: hidden;
-
-      .main-product__photo {
-        transform: translateY(100%) translateX(-50%);
-      }
-    }
-
-    &_active {
-      opacity: 1;
-      visibility: visible;
-
-      .main-product__photo {
-        transform: translateY(0) translateX(-50%);
-      }
-    }
+    flex-basis: 20%;
+    flex-shrink: 0;
   }
 
   &-content {

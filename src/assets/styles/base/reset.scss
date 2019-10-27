@@ -8,6 +8,10 @@ html {
   box-sizing: border-box;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
