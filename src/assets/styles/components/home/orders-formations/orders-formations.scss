@@ -26,4 +26,12 @@
       }
     }
   }
+
+  @include mq-to-480 {
+    .orders-forma {
+      .orders-formations-item-photo {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }

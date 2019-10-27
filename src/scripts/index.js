@@ -10,6 +10,7 @@ import BestSellerSlider from "./components/home/best-seller/BestSellerSlider";
 
 const header = ((header) => {
     header.preload();
+    header.menuMob();
 })(Header);
 
 const productnews = ((productnewslist) => {

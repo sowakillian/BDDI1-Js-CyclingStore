@@ -41,7 +41,6 @@ const ProductNewsList = {
             if (direction === 1) {
                 this.el.prepend(this.el.lastElementChild);
             } else {
-                console.log(this.el.firstElementChild)
                 this.el.appendChild(this.el.firstElementChild);
             }
 

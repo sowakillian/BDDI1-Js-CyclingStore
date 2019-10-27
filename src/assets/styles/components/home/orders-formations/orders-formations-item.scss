@@ -52,6 +52,10 @@
       background-color: $light-red;
       color: white;
     }
+
+    &_hidden {
+
+    }
   }
 
   &-photo {
@@ -73,6 +77,24 @@
 
       &[data-state='success'] {
         background-color: $fluo-green;
+        border-color: $fluo-green;
+      }
+      position: relative;
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 18px;
+          height: auto;
+        }
+    }
+
+    &__profile {
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        height: auto;
       }
     }
   }
@@ -86,6 +108,7 @@
   &[data-state='success'] {
     .orders-formations-item-photo__status{
       background-color: $fluo-green;
+      border-color: $fluo-green;
       position: relative;
 
       &:before {
@@ -111,10 +134,16 @@
   &[data-state='warning'] {
     .orders-formations-item-photo__status {
       background-color: $light-red;
+      border-color: $light-red;
+    }
+
+    .orders-formations-item-photo__profile {
+      border-color: $light-red;
     }
 
     .orders-formations-item-details__info {
       font-weight: bold;
+      border-color: $light-red;
       color: $light-red;
     }
 
@@ -134,6 +163,17 @@
 
     .orders-formations-item__button {
       border-color: $middle-grey;
+    }
+  }
+
+  @include mq-to-480 {
+    flex-direction: column;
+
+    &__button {
+      margin-top: 25px;
+      &_hidden {
+        display: none;
+      }
     }
   }
 }
