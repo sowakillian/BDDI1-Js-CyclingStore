@@ -38,6 +38,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+    }
+
+    .product-slider__wrapper {
+      justify-content: flex-start;
+    }
+
+    .product-item {
+      margin-right: 7px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
 
     &-wrapper {
@@ -46,7 +59,7 @@
       justify-content: flex-start;
       overflow: hidden;
       position: relative;
-      height: 228px;
+      height: 255px;
     }
   }
 }

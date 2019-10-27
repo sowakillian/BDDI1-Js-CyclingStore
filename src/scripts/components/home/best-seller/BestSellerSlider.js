@@ -29,40 +29,35 @@ const BestSellerSlider = {
               <div class="product-slider__wrapper">
 
               ${ slideItem[0] ?`
-                    <article class="product-item product-item_soldout">
+                    <article class="product-item">
                         ${slideItem[0].innerHTML}
                     </article>`
                 : ''}
               
               ${ slideItem[1] ?`
-                    <article class="product-item product-item_soldout">
+                    <article class="product-item">
                         ${slideItem[1].innerHTML}
                     </article>`
                 : ''}
               
                 ${ slideItem[2] ?`
-                    <article class="product-item product-item_soldout">
+                    <article class="product-item">
                         ${slideItem[2].innerHTML}
                     </article>`
                 : ''}
               
                 ${ slideItem[3] ?`
-                    <article class="product-item product-item_soldout">
+                    <article class="product-item">
                         ${slideItem[3].innerHTML}
                     </article>`
                 : ''}
               
               
                 ${ slideItem[4] ?`
-                    <article class="product-item product-item_soldout">
+                    <article class="product-item">
                         ${slideItem[4].innerHTML}
                     </article>`
                 : ''}
-              
-              
-             
-               
-
               </div>
             </div>
         `);

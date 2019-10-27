@@ -3,6 +3,8 @@
   width: calc(20% - (28px / 4));
   border-bottom: 4px solid #d6d6d6;
   overflow: hidden;
+  min-height: 255px;
+  position: relative;
 
   &:hover {
     cursor: pointer;
@@ -54,6 +56,9 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
   }
 
   @include mq-to-576 {

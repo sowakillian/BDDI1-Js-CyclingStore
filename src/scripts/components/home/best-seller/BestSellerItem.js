@@ -42,7 +42,7 @@ class MainProductItem {
 
     fill(){
         this.title.textContent = this.model.title;
-        this.stock.textContent = this.model.stock;
+        this.stock.textContent = this.model.stock + " en stock";
         this.photo.src = this.model.images.big;
         this.engine.textContent = this.model.specs.engine;
         this.color.textContent = this.model.specs.color;

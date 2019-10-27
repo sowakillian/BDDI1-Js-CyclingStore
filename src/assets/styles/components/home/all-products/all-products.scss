@@ -86,7 +86,7 @@
   }
 
   &-list {
-    height: 228px;
+    height: 255px;
     overflow: hidden;
     transition: all 0.2s ease;
 
@@ -116,6 +116,16 @@
   }
 
   @include mq-to-576 {
+
+    &-header {
+      &-options {
+        flex-direction: column;
+
+        &__label {
+          margin-bottom: 20px;
+        }
+      }
+    }
     .product-item {
       width: 100%;
     }
