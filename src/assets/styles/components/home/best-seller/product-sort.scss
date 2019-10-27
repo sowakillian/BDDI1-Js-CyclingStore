@@ -1,0 +1,12 @@
+.product-sort {
+  display: flex;
+  font-size: 14px;
+  color: #555555;
+  align-items: center;
+
+  &__select {
+    padding-left: 12px;
+    margin-left: 10px;
+    width: 115px;
+  }
+}

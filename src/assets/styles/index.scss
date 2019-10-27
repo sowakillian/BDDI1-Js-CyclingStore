@@ -1,0 +1,40 @@
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'abstracts/variables';
+@import 'abstracts/animations';
+@import 'abstracts/mixins';
+
+@import 'components/global/wrap';
+@import 'components/global/global';
+@import 'components/global/buttons';
+@import 'components/global/select';
+@import 'components/global/preloader';
+
+@import 'layouts/main/header';
+@import 'layouts/main/header-nav-mob';
+@import 'layouts/main/header-menu-mob';
+@import 'layouts/main/footer';
+
+@import 'components/home/main-product/main-product';
+
+@import 'components/home/best-seller/best-seller';
+@import 'components/home/best-seller/product-slider';
+@import 'components/home/best-seller/product-sort';
+@import 'components/home/best-seller/product-item';
+
+@import 'components/home/product-news/product-news';
+@import 'components/home/product-news/product-news-slider';
+@import 'components/home/product-news/news-nav';
+
+@import 'components/home/orders-formations/orders-formations';
+@import 'components/home/orders-formations/orders-formations-item';
+@import 'components/home/orders-formations/formations-list';
+@import 'components/home/orders-formations/orders-list';
+
+@import 'components/home/sales-chart/sales-chart';
+
+@import 'components/home/all-products/all-products';
+
+
+

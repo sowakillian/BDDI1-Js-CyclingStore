@@ -6,32 +6,48 @@
   <title>Webfront Project</title>
 </head>
 <body>
+  <div class="preloader">
+    <div class="preloader-container">
+      <div class="preloader-loader"></div>
+    </div>
+  </div>
   <header class="header">
     <div class="wrap">
         <nav class="header__nav">
-          <ul class="nav-list">
-            <li class="nav-list__item nav-list__item_active"><a class="header__item" href="#">Accueil</a></li>
-            <li class="nav-list__item"><a class="header__item" href="#">En cours</a></li>
-            <li class="nav-list__item"><a class="header__item" href="#">Historique</a></li>
+          <ul>
+            <li class="header__item header__item_active"><a href="#">Accueil</a></li>
+            <li class="header__item"><a href="#">En cours</a></li>
+            <li class="header__item"><a href="#">Historique</a></li>
           </ul>
+          <div class="header-nav-mob">
+            <button class="header-nav-mob__button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+          </div>
         </nav>
 
         <div class="header__account">
           <a class="header__item" href="#">Sophia Lopez</a>
-          <a class="header__item" href="#">Déconnexion</a>
+          <a class="header__item header__deconnexion" href="#">Déconnexion</a>
         </div>
     </div>
   </header>
 
+  <section class="header-menu-mob">
+    <ul class="header-menu-mob__content">
+      <a href="#"><li>Accueil</li></a>
+      <a href="#"><li>En cours</li></a>
+      <a href="#"><li>Historique</li></a>
+    </ul>
+    <span class="header-menu-mob__cross">X</span>
+  </section>
+
     <section class="main-product">
       <div class="wrap">
-        <h2 class="main-product__title">Nom du modèle 2</h2>
-        <p class="main-product__type">Taille L - Mécanique</p>
-        <p class="main-product__color">Rouge feu</p>
 
-        <img class="main-product__photo" src="/src/images/main-product/velo.png">
-
-        <button class="main-product__button-buy base-button">commander</button>
       </div>
     </section>
 
@@ -41,7 +57,7 @@
           <p class="best-seller__title">Best-seller</p>
           <div class="product-sort">
             <label for="product-selector">trier par : </label>
-            <select class="product-sort__select" id="product-selector">
+            <select class="product-sort__select base-select" data-type="dark" id="product-selector">
               <option value="stock">stock</option>
               <option value="color">color</option>
               <option value="size">size</option>
@@ -50,61 +66,21 @@
         </header>
 
         <div class="product-slider">
-            <article class="product-item product-item_soldout">
-              <div class="product-item__photo">
-                <img src="/src/images/best-seller/slider/product2.png">
-              </div>
-              <div class="product-item__content">
-                <h3 class="product-item__title">Nom du modèle un peu long</h3>
-                <h4 class="product-item__description">Manuel - Vert gazon</h4>
-                <span class="product-item__stock">0 en stock</span>
-              </div>
-            </article>
+          <button class="product-slider__arrow-left">
+            <img src="/src/assets/images/best-seller/slider/slider_arrow_left.svg">
+          </button>
 
-            <article class="product-item product-item_soldout">
-              <div class="product-item__photo">
-                <img src="/src/images/best-seller/slider/product2.png">
-              </div>
-              <div class="product-item__content">
-                <h3 class="product-item__title">Nom du modèle un peu long</h3>
-                <h4 class="product-item__description">Manuel - Vert gazon</h4>
-                <span class="product-item__stock">0 en stock</span>
-              </div>
+           <div class="best-seller-slider-wrapper">
+                <div class="product-slider-inner best-seller-slider">
 
-            </article>
+                </div>
 
-            <article class="product-item">
-              <div class="product-item__photo">
-                <img src="/src/images/best-seller/slider/product2.png">
-              </div>
-              <div class="product-item__content">
-                <h3 class="product-item__title">Nom du modèle un peu long</h3>
-                <h4 class="product-item__description">Manuel - Vert gazon</h4>
-                <span class="product-item__stock">0 en stock</span>
-              </div>
-            </article>
 
-            <article class="product-item">
-              <div class="product-item__photo">
-                <img src="/src/images/best-seller/slider/product2.png">
-              </div>
-              <div class="product-item__content">
-                <h3 class="product-item__title">Nom du modèle un peu long</h3>
-                <h4 class="product-item__description">Manuel - Vert gazon</h4>
-                <span class="product-item__stock">0 en stock</span>
-              </div>
-            </article>
+          </div>
 
-            <article class="product-item">
-              <div class="product-item__photo">
-                <img src="/src/images/best-seller/slider/product2.png">
-              </div>
-              <div class="product-item__content">
-                <h3 class="product-item__title">Nom du modèle un peu long</h3>
-                <h4 class="product-item__description">Manuel - Vert gazon</h4>
-                <span class="product-item__stock">0 en stock</span>
-              </div>
-            </article>
+          <button class="product-slider__arrow-right">
+            <img src="/src/assets/images/best-seller/slider/slider_arrow_right.svg">
+          </button>
         </div>
       </div>
     </section>
@@ -113,16 +89,9 @@
       <div class="wrap">
         <p class="product-news__title">Nouveautés</p>
         <div class="product-news-slider">
-          <article class="product-news-slider-item">
-            <img src="/src/images/product-news/news1.jpg" class="product-news-slider-item__photo">
-            <div class="product-news-slider-content">
-              <h3 class="product-news-slider-content__title">Nom du nouveau modèle</h3>
-              <p class="product-news-slider-content__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.
-              </p>
-              <button class="product-news-slider-content__button base-button base-button_black">commander</button>
-            </div>
-          </article>
+          <div class="product-news-slider-inner">
+
+          </div>
         </div>
         <nav class="news-nav">
           <ul class="news-nav-list">
@@ -133,6 +102,265 @@
         </nav>
       </div>
     </section>
+
+    <section class="orders-formations">
+      <div class="wrap">
+        <div class="orders-list">
+          <p class="orders-formations__title">
+            Historique de vos commandes
+          </p>
+
+          <article class="orders-formations-item" data-state="warning" data-consultation="true">
+
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"><img src="/src/assets/images/orders-formations/profiles_photo/1.jpg"></span>
+                <span class="orders-formations-item-photo__status orders-formations-item-photo__status_info"><img src="/src/assets/images/orders-formations/info.png"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__number">Commande N°365412</p>
+                <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
+            </div>
+
+            <button class="orders-formations-item__button">consulter</button>
+          </article>
+
+          <article class="orders-formations-item" data-state="shipping">
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"><img src="/src/assets/images/orders-formations/profiles_photo/2.jpg"></span>
+                <span class="orders-formations-item-photo__status orders-formations-item-photo__status_shipping"><img src="/src/assets/images/orders-formations/truck.png"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__number">Commande N°365412</p>
+                <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
+            </div>
+            <button class="orders-formations-item__button orders-formations-item__button_hidden">consulter</button>
+          </article>
+
+          <article class="orders-formations-item" data-state="success">
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"><img src="/src/assets/images/orders-formations/profiles_photo/1.jpg"></span>
+                <span class="orders-formations-item-photo__status"><img src="/src/assets/images/orders-formations/tick-sign.svg"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__number">Commande N°365412</p>
+                <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
+            </div>
+            <button class="orders-formations-item__button orders-formations-item__button_hidden">consulter</button>
+          </article>
+
+          <article class="orders-formations-item" data-state="success">
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"><img src="/src/assets/images/orders-formations/profiles_photo/2.jpg"></span>
+                <span class="orders-formations-item-photo__status"><img src="/src/assets/images/orders-formations/tick-sign.svg"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__number">Commande N°365412</p>
+                <p class="orders-formations-item-details__date">Par Vous le 02 février 2015</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
+            </div>
+            <button class="orders-formations-item__button orders-formations-item__button_hidden">consulter</button>
+          </article>
+
+        </div>
+        <div class="orders-forma">
+          <p class="orders-formations__title">
+            Formations liées
+          </p>
+
+          <article class="orders-formations-item">
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"><img src="/src/assets/images/orders-formations/formations.jpg"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__date">force de vente</p>
+                <p class="orders-formations-item-details__number">Commande N°365412</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
+            </div>
+
+            <button class="orders-formations-item__button orders-formations-item__button_hidden">consulter</button>
+          </article>
+
+          <article class="orders-formations-item">
+            <div class="orders-formations-item-photoAndDetails">
+              <div class="orders-formations-item-photo">
+                <span class="orders-formations-item-photo__profile"><img src="/src/assets/images/orders-formations/formations.jpg"></span>
+              </div>
+              <div class="orders-formations-item-details">
+                <p class="orders-formations-item-details__date">Optimiser vos campagnes publicitaires</p>
+                <p class="orders-formations-item-details__number">Gestion des stocks</p>
+                <span class="orders-formations-item-details__info">attention requise</span>
+              </div>
+              </div>
+            <button class="orders-formations-item__button orders-formations-item__button_hidden">consulter</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="sales-chart">
+      <div class="wrap">
+        <header class="sales-chart-header">
+          <p class="sales-chart-header__title">Ventes / commandes</p>
+          <div class="sales-chart-header-options">
+            <label for="model">modèle :</label>
+            <select class="base-select sales-chart-header-options__select" data-type="light" id="model">
+              <option>Nom du modèle</option>
+              <option value="kazak2000">Kazak2000</option>
+              <option value="cher120">Cher120</option>
+            </select>
+
+            <label for="model">couleur :</label>
+            <select class="base-select sales-chart-header-options__select" data-type="light" id="color">
+              <option value="noir">Noir</option>
+              <option value="bleu">Bleu</option>
+              <option value="vert">Vert</option>
+            </select>
+          </div>
+        </header>
+        <img class="sales-chart__graph" src="/src/assets/images/sales-chart/sales-graph.png">
+      </div>
+    </section>
+
+  <section class="all-products">
+    <div class="wrap">
+
+      <header class="all-products-header">
+        <p class="all-products-header__title">Tous les modèles</p>
+        <div class="all-products-header-options">
+          <label for="search-product" class="all-products-header-options__label">
+            <img src="/src/assets/images/search.png">
+            <input class="all-products-header-options__search" type="search" id="search-product" placeholder="Rechercher un produit">
+          </label>
+          <div class="product-sort">
+            <label for="product-selector">trier par : </label>
+            <select class="product-sort__select base-select" data-type="dark" id="product-selector">
+              <option value="stock">stock</option>
+              <option value="color">color</option>
+              <option value="size">size</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <div class="product-slider__container product-slider__container_notslider">
+        <div class="product-slider__wrapper all-products-list">
+
+        </div>
+
+        <div class="all-products-more">
+          <span class="all-products-more__stroke-left"></span>
+          <button class="all-products-more__button">voir tous les modèles</button>
+          <span class="all-products-more__stroke-right"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <nav class="footer-item">
+          <p class="footer-item__title">
+            Navigation
+          </p>
+          <ul>
+            <li><a class="footer-item__link" href="#" >actualiés</a></li>
+            <li><a class="footer-item__link" href="#" >annuaire</a></li>
+            <li><a class="footer-item__link" href="#" >app store</a></li>
+            <li><a class="footer-item__link" href="#" >commandes</a></li>
+            <li><a class="footer-item__link" href="#" >formations</a></li>
+            <li><a class="footer-item__link" href="#" >publicités</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-item">
+          <p class="footer-item__title">
+            Mon compte
+          </p>
+          <ul>
+            <li><a class="footer-item__link" href="#" >contacts favoris</a></li>
+            <li><a class="footer-item__link" href="#" >commandes</a></li>
+            <li><a class="footer-item__link" href="#" >formations</a></li>
+            <li><a class="footer-item__link" href="#" >préférences</a></li>
+            <li><a class="footer-item__link" href="#" >profil</a></li>
+            <li><a class="footer-item__link" href="#" >publicités</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-item">
+          <p class="footer-item__title">
+            Applications
+          </p>
+          <ul>
+            <li><a class="footer-item__link" href="#" >Catalogue</a></li>
+            <li><a class="footer-item__link" href="#" >App SAV</a></li>
+            <li><a class="footer-item__link" href="#" >App Garantie</a></li>
+            <li><a class="footer-item__link" href="#" >User Management</a></li>
+            <li><a class="footer-item__link" href="#" >CRM</a></li>
+            <li><a class="footer-item__link" href="#" >ERP</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-item">
+          <p class="footer-item__title">
+            Liens
+          </p>
+          <ul>
+            <li><a class="footer-item__link" href="#" >à propos</a></li>
+            <li><a class="footer-item__link" href="#" >conditions d'utilisations</a></li>
+            <li><a class="footer-item__link" href="#" >mentions légales</a></li>
+            <li><a class="footer-item__link" href="#" >commandes</a></li>
+            <li><a class="footer-item__link" href="#" >intranet</a></li>
+            <li><a class="footer-item__link" href="#" >site.com</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+  <script type="text/template" id="news-item-tmpl">
+      <img src="/src/assets/images/product-news/news1.jpg" class="product-news-slider-item__photo">
+      <div class="product-news-slider-content">
+        <h3 class="product-news-slider-content__title"></h3>
+        <p class="product-news-slider-content__description">
+
+        </p>
+        <button class="product-news-slider-content__button base-button base-button_black">commander</button>
+      </div>
+  </script>
+
+  <script type="text/template" id="main-product-tmpl">
+      <h2 class="main-product__title"></h2>
+      <p class="main-product__type"></p>
+      <p class="main-product__color"></p>
+
+      <img class="main-product__photo" src="">
+
+      <button class="main-product__buttonBuy base-button base-button_white">commander</button>
+  </script>
+
+  <script type="text/template" id="product-item-tmpl">
+    <div class="product-item__photo">
+      <img src="/src/assets/images/best-seller/slider/product2.png">
+    </div>
+    <div class="product-item__content">
+      <h3 class="product-item__title"></h3>
+      <h4 class="product-item__description"><p class="product-item__engine"></p> - <p class="product-item__color"></p></h4>
+      <span class="product-item__stock"></span>
+    </div>
+  </script>
 
 </body>
 </html>

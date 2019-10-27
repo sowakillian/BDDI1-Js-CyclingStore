@@ -1,0 +1,410 @@
+[
+  {
+    "title": "Nom du modèle",
+    "specs": {
+      "size": "L",
+      "engine": "Mécanique",
+      "color" : "Rouge Feu"
+    },
+    "stock": 3,
+    "slug": "/model/0",
+    "images": {
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
+    },
+    "hero": true,
+    "best": true,
+    "color": "#009f55"
+  },
+  {
+    "title": "Nom du modèle 2",
+    "specs": {
+      "size": "L",
+      "engine": "Mécanique",
+      "color" : "Bleu Nuit"
+    },
+    "stock": 0,
+    "slug": "/model/1",
+    "images": {
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "lightgrey"
+  },
+  {
+    "title": "Nom long du troisème modèle",
+    "specs": {
+      "size": "M",
+      "engine": "Automatique",
+      "color" : "Vert Gazon"
+    },
+    "stock": 1,
+    "slug": "/model/2",
+    "images": {
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "orange"
+  },
+  {
+    "title": "Nom du modèle 4",
+    "specs": {
+      "size": "S",
+      "engine": "Automatique",
+      "color" : "Blanc"
+    },
+    "stock": 8,
+    "slug": "/model/3",
+    "images": {
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "#ff3f0c"
+  },
+  {
+    "title": "Super Nom",
+    "specs": {
+      "size": "S",
+      "engine": "Mécanique",
+      "color" : "Jaune Poussin"
+    },
+    "stock": 5,
+    "slug": "/model/4",
+    "images": {
+      "big": "/src/assets/images/products/model5_big.png",
+      "small": "/src/assets/images/products/model5_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "white"
+  },
+  {
+    "title": "Un modèle avec un nom vraiment long",
+    "specs": {
+      "size": "S",
+      "engine": "Semi-Automatique",
+      "color" : "Gris Souris"
+    },
+    "stock": 2,
+    "slug": "/model/5",
+    "images": {
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "#009f55"
+  },
+  {
+    "title": "Modèle",
+    "specs": {
+      "size": "L",
+      "engine": "Semi-Automatique",
+      "color" : "Noir"
+    },
+    "stock": 0,
+    "slug": "/model/6",
+    "images": {
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "lightgrey"
+  },
+  {
+    "title": "Nom du modèle 8",
+    "specs": {
+      "size": "M",
+      "engine": "Mécanique",
+      "color" : "Rouge Feu"
+    },
+    "stock": 0,
+    "slug": "/model/7",
+    "images": {
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "orange"
+  },
+  {
+    "title": "Le neuvième modème",
+    "specs": {
+      "size": "M",
+      "engine": "Mécanique",
+      "color" : "Noir"
+    },
+    "stock": 1,
+    "slug": "/model/8",
+    "images": {
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "#ff3f0c"
+  },
+  {
+    "title": "Modèle 10",
+    "specs": {
+      "size": "XS",
+      "engine": "Semi-Automatique",
+      "color" : "Gris Souris"
+    },
+    "stock": 3,
+    "slug": "/model/9",
+    "images": {
+      "big": "/src/assets/images/products/model5_big.png",
+      "small": "/src/assets/images/products/model5_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "white"
+  },
+  {
+    "title": "Nom du modèle",
+    "specs": {
+      "size": "M",
+      "engine": "Automatique",
+      "color" : "Blanc"
+    },
+    "stock": 10,
+    "slug": "/model/10",
+    "images": {
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "#009f55"
+  },
+  {
+    "title": "Nom du modèle un peu plug long",
+    "specs": {
+      "size": "L",
+      "engine": "Automatique",
+      "color" : "Vert Gazon"
+    },
+    "stock": 2,
+    "slug": "/model/11",
+    "images": {
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "lightgrey"
+  },
+  {
+    "title": "Modèle numéro 13",
+    "specs": {
+      "size": "XL",
+      "engine": "Mécanique",
+      "color" : "Orange"
+    },
+    "stock": 3,
+    "slug": "/model/12",
+    "images": {
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "orange"
+  },
+  {
+    "title": "Le quatorzième modèle",
+    "color": "#ff3f0c",
+    "specs": {
+      "size": "S",
+      "engine": "Semi-Automatique",
+      "color" : "Vert Gazon"
+    },
+    "stock": 1,
+    "slug": "/model/13",
+    "images": {
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
+    },
+    "hero": true,
+    "best": true
+  },
+  {
+    "title": "Le modèle avant 16",
+    "specs": {
+      "size": "S",
+      "engine": "Automatique",
+      "color" : "Jaune Poussin"
+    },
+    "stock": 8,
+    "slug": "/model/14",
+    "images": {
+      "big": "/src/assets/images/products/model5_big.png",
+      "small": "/src/assets/images/products/model5_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "white"
+  },
+  {
+    "title": "16",
+    "specs": {
+      "size": "L",
+      "engine": "Mécanique",
+      "color" : "Bleu Nuit"
+    },
+    "stock": 1,
+    "slug": "/model/15",
+    "images": {
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "#009f55"
+  },
+  {
+    "title": "Le modèle après 16",
+    "specs": {
+      "size": "M",
+      "engine": "Semi-Automatique",
+      "color" : "Vert Pomme"
+    },
+    "stock": 12,
+    "slug": "/model/16",
+    "images": {
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "lightgrey"
+  },
+  {
+    "title": "Nom du modèle",
+    "specs": {
+      "size": "M",
+      "engine": "Mécanique",
+      "color" : "Violet"
+    },
+    "stock": 7,
+    "slug": "/model/17",
+    "images": {
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "orange"
+  },
+  {
+    "title": "Encore un modèle",
+    "specs": {
+      "size": "M",
+      "engine": "Mécanique",
+      "color" : "Rouge Feu"
+    },
+    "stock": 1,
+    "slug": "/model/18",
+    "images": {
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "#ff3f0c"
+  },
+  {
+    "title": "Nom du modèlle avec deux LL",
+    "specs": {
+      "size": "S",
+      "engine": "Automatique",
+      "color" : "Gris Souris"
+    },
+    "stock": 3,
+    "slug": "/model/19",
+    "images": {
+      "big": "/src/assets/images/products/model5_big.png",
+      "small": "/src/assets/images/products/model5_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "white"
+  },
+  {
+    "title": "Modèle",
+    "specs": {
+      "size": "XL",
+      "engine": "Semi-Automatique",
+      "color" : "Vert Gazon"
+    },
+    "stock": 5,
+    "slug": "/model/20",
+    "images": {
+      "big": "/src/assets/images/products/model1_big.png",
+      "small": "/src/assets/images/products/model1_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "#009f55"
+  },
+  {
+    "title": "Le modèle 22",
+    "specs": {
+      "size": "M",
+      "engine": "Semi-Automatique",
+      "color" : "Blanc"
+    },
+    "stock": 3,
+    "slug": "/model/21",
+    "images": {
+      "big": "/src/assets/images/products/model2_big.png",
+      "small": "/src/assets/images/products/model2_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "lightgrey"
+  },
+  {
+    "title": "Avant dernier modèle",
+    "specs": {
+      "size": "L",
+      "engine": "Mécanique",
+      "color" : "Noir"
+    },
+    "stock": 0,
+    "slug": "/model/22",
+    "images": {
+      "big": "/src/assets/images/products/model3_big.png",
+      "small": "/src/assets/images/products/model3_small.png"
+    },
+    "hero": false,
+    "best": true,
+    "color": "orange"
+  },
+  {
+    "title": "Last but not least",
+    "specs": {
+      "size": "L",
+      "engine": "Mécanique",
+      "color" : "Arc-en-ciel"
+    },
+    "stock": 0,
+    "slug": "/model/23",
+    "images": {
+      "big": "/src/assets/images/products/model4_big.png",
+      "small": "/src/assets/images/products/model4_small.png"
+    },
+    "hero": false,
+    "best": false,
+    "color": "#ff3f0c"
+  }
+]

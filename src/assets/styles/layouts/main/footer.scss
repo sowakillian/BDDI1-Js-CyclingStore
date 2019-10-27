@@ -1,0 +1,55 @@
+.footer {
+  background-color: $dark-blue;
+  margin-top: 84px;
+
+  .wrap {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-item {
+    &__title {
+      color: $white;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+
+    &__link {
+      opacity: 0.6;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  //responsive - footer.scss
+  @include mq-to-700 {
+    .wrap {
+      flex-wrap: wrap;
+      padding: 50px 20px;
+      justify-content: space-around;
+    }
+
+    &-item {
+      width: 50%;
+      text-align: center;
+
+      &:nth-of-type(1), &:nth-of-type(2) {
+        margin-bottom: 35px;
+      }
+
+      &__title {
+        margin-bottom: 0;
+      }
+      ul {
+        display: none;
+      }
+    }
+  }
+
+
+}
+
+
+

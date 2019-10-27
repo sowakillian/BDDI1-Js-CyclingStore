@@ -1,0 +1,138 @@
+.all-products {
+  min-height: 250px;
+
+  .wrap {
+    position: relative;
+    padding-top: 40px;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 43px;
+
+    &__title {
+      font-size: 24px;
+      color: $middle-grey;
+    }
+
+    &-options {
+      display: flex;
+      align-items: center;
+
+      &__label {
+        position: relative;
+        img {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &__search {
+        width: 255px;
+        padding: 8px 0 8px 40px;
+        margin-right: 30px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 1px solid $light-grey;
+        box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.15);
+
+        &::placeholder {
+          color:$middle-grey;
+        }
+
+      }
+    }
+  }
+
+  .product-slider__wrapper {
+    flex-wrap: wrap;
+
+    .product-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-more {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    background-color: white;
+
+    &:before {
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: #d6d6d6;
+      position: absolute;
+      transform: translateY(17px);
+      z-index: 0;
+    }
+
+    &__button {
+      color: $middle-grey;
+      border-color: $shipping-grey;
+      padding: 8px 12px;
+      z-index: 1;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-list {
+    height: 255px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+
+    &__opened {
+      overflow: visible;
+      height: auto;
+    }
+  }
+
+  @include mq-to-1024 {
+    &-list {
+      height: 255px;
+    }
+  }
+
+  @include mq-to-768 {
+    &-header {
+      &__title {
+        margin-bottom: 20px;
+      }
+      flex-direction: column;
+    }
+
+    .product-item {
+      width: calc(25% - (28px / 4));
+    }
+  }
+
+  @include mq-to-576 {
+
+    &-header {
+      &-options {
+        flex-direction: column;
+
+        &__label {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .product-item {
+      width: 100%;
+    }
+
+    &-list {
+      height: 352px;
+    }
+  }
+
+}

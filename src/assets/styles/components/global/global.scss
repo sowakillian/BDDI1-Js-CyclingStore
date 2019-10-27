@@ -1,0 +1,25 @@
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
