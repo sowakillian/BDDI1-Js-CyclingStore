@@ -42,7 +42,6 @@ const MainProductList = {
             for (i = 0; i < slides.length; i++) {
                 slides[i].classList.add('main-product__item_inactive');
                 slides[i].classList.remove('main-product__item_active');
-
             }
             this.slideIndex++;
             if (this.slideIndex > slides.length) {this.slideIndex = 1;}

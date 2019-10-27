@@ -27,17 +27,38 @@ const BestSellerSlider = {
             this.el.insertAdjacentHTML('beforeend', `
              <div class="product-slider__container">
               <div class="product-slider__wrapper">
-              <article class="product-item product-item_soldout">
-                ${slideItem[0].innerHTML}
-              </article>
 
-              <article class="product-item product-item_soldout">
-                ${slideItem[1].innerHTML}
-              </article>
+              ${ slideItem[0] ?`
+                    <article class="product-item product-item_soldout">
+                        ${slideItem[0].innerHTML}
+                    </article>`
+                : ''}
               
-              <article class="product-item product-item_soldout">
-                ${slideItem[2].innerHTML}
-              </article>
+              ${ slideItem[1] ?`
+                    <article class="product-item product-item_soldout">
+                        ${slideItem[1].innerHTML}
+                    </article>`
+                : ''}
+              
+                ${ slideItem[2] ?`
+                    <article class="product-item product-item_soldout">
+                        ${slideItem[2].innerHTML}
+                    </article>`
+                : ''}
+              
+                ${ slideItem[3] ?`
+                    <article class="product-item product-item_soldout">
+                        ${slideItem[3].innerHTML}
+                    </article>`
+                : ''}
+              
+              
+                ${ slideItem[4] ?`
+                    <article class="product-item product-item_soldout">
+                        ${slideItem[4].innerHTML}
+                    </article>`
+                : ''}
+              
               
              
                
@@ -71,7 +92,6 @@ const BestSellerSlider = {
         }, false);
 
         slider.addEventListener('transitionend', function() {
-
             if (direction === 1) {
                 slider.prepend(slider.lastElementChild);
             } else {

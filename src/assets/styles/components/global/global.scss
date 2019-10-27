@@ -8,7 +8,8 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: darkgrey;
+  opacity: 0.6;
+  transition: all 0.2s ease;
 }
 
 /* selected link */

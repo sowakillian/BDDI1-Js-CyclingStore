@@ -21,6 +21,16 @@
       display: flex;
       align-items: center;
 
+      &__label {
+        position: relative;
+        img {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
       &__search {
         width: 255px;
         padding: 8px 0 8px 40px;
@@ -34,6 +44,7 @@
         &::placeholder {
           color:$middle-grey;
         }
+
       }
     }
   }
@@ -50,11 +61,23 @@
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
+    background-color: white;
+
+    &:before {
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: #d6d6d6;
+      position: absolute;
+      transform: translateY(17px);
+      z-index: 0;
+    }
 
     &__button {
       color: $middle-grey;
       border-color: $shipping-grey;
       padding: 8px 12px;
+      z-index: 1;
 
       &:hover {
         cursor: pointer;
